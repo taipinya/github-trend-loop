@@ -1,0 +1,92 @@
+loop:
+  interval_days: 3
+  timezone: UTC
+
+github:
+  api_base_url: https://api.github.com
+  trending_base_url: https://github.com/trending
+  user_agent: github-trend-loop/0.1
+  request_timeout_seconds: 20
+  per_page: 30
+
+trending:
+  enabled: true
+  languages: [""]
+  periods:
+    - daily
+    - weekly
+  limit_each: 30
+
+search:
+  enabled: true
+  per_query_limit: 30
+  queries:
+    - "created:>{date_30d} stars:>50"
+    - "pushed:>{date_14d} stars:>200"
+    - "stars:100..5000 pushed:>{date_14d}"
+  topics:
+    - llm
+    - ai-agent
+    - rag
+    - mcp
+    - code-generation
+    - developer-tools
+    - machine-learning
+    - robotics
+  topic_query_template: "topic:{topic} stars:>50 pushed:>{date_30d}"
+
+filters:
+  min_stars: 10
+  max_candidates: 500
+  exclude_archived: true
+  exclude_disabled: true
+
+details:
+  readme_max_chars: 12000
+  readme_summary_chars: 700
+
+scoring:
+  subscriber_weight: 5
+  fork_weight: 2
+  recent_push_days:
+    strong: 7
+    medium: 14
+    weak: 30
+  recent_push_bonus:
+    strong: 20
+    medium: 10
+    weak: 4
+  readme_bonus:
+    minimal: 2
+    useful: 8
+    complete: 15
+  topic_relevance_bonus: 5
+  awesome_penalty: 80
+  stale_days: 180
+  stale_penalty: 50
+  baseline_star_scale: 0.01
+
+report:
+  language: zh-CN
+  title: GitHub 趋势项目观察
+
+llm:
+  enabled: true
+  provider: deepseek
+  model: deepseek-v4-flash
+  base_url: https://api.deepseek.com
+  api_key_env: DEEPSEEK_API_KEY
+  max_output_tokens: 5000
+  temperature: 0.4
+  require_success: true
+
+paths:
+  data_dir: data
+  reports_dir: reports
+  snapshots_dir: data/snapshots
+  latest_snapshot: data/latest_snapshot.json
+  latest_ranked: data/latest_ranked.json
+  latest_top3: data/latest_top3.json
+  latest_report: reports/latest.md
+  state: STATE.md
+  run_log: loop-run-log.md
