@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-07-06T09:31:00Z
-- Baseline status: delta mode active
+- Last run: 2026-07-06T12:27:47Z
+- Baseline status: baseline established; next run can calculate deltas
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-07-06T093100Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-07-06T093100Z.json
-- Candidate count after merge: 286
-- Detailed repo count: 0
+- Latest archived report path: reports/2026-07-06T122747Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-07-06T122747Z.json
+- Candidate count after merge: 309
+- Detailed repo count: 308
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,28 +15,11 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - none
+  - codecrafters-io/build-your-own-x (https://github.com/codecrafters-io/build-your-own-x) score=5253.88
+  - sindresorhus/awesome (https://github.com/sindresorhus/awesome) score=4774.95
+  - freeCodeCamp/freeCodeCamp (https://github.com/freeCodeCamp/freeCodeCamp) score=4546.63
 - Warnings:
-  - GITHUB_TOKEN is not set; GitHub API rate limits will be lower.
-  - Search query failed [topic:robotics stars:>50 pushed:>2026-06-06]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [Zackriya-Solutions/meetily]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [openai/codex-plugin-cc]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [asgeirtj/system_prompts_leaks]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [Leonxlnx/taste-skill]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [alirezarezvani/claude-skills]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [rommapp/romm]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [ogulcancelik/herdr]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [alibaba/page-agent]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [harvard-edge/cs249r_book]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [usestrix/strix]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [hesreallyhim/awesome-claude-code]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [coreyhaines31/marketingskills]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [JuliusBrussee/caveman]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [CoplayDev/unity-mcp]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [facebook/astryx]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [immich-app/immich]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [ruvnet/RuView]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
-  - Repo detail failed [gastownhall/gastown]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+  - none
 - Next run notes:
   - Keep `data/latest_snapshot.json` if you want the next run to compute 3-day deltas.
   - Keep `data/snapshots/` and timestamped `reports/` files for historical traceability.

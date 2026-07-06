@@ -208,3 +208,20 @@
 - warning: Repo detail failed [immich-app/immich]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
 - warning: Repo detail failed [ruvnet/RuView]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
 - warning: Repo detail failed [gastownhall/gastown]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+
+## 2026-07-06T12:27:47Z
+
+- Candidate count after merge: 309
+- Detailed repo count: 308
+- Baseline: True
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-06T122747Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-06T122747Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- codecrafters-io/build-your-own-x | score=5253.88 | https://github.com/codecrafters-io/build-your-own-x
+- sindresorhus/awesome | score=4774.95 | https://github.com/sindresorhus/awesome
+- freeCodeCamp/freeCodeCamp | score=4546.63 | https://github.com/freeCodeCamp/freeCodeCamp
+- Warnings:
+- warning: none

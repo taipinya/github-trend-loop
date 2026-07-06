@@ -1,5 +1,153 @@
 {
-  "run_at": "2026-07-06T09:31:00Z",
-  "baseline": false,
-  "repos": []
+  "run_at": "2026-07-06T12:27:47Z",
+  "baseline": true,
+  "repos": [
+    {
+      "full_name": "codecrafters-io/build-your-own-x",
+      "html_url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "homepage": "https://codecrafters.io",
+      "language": "Markdown",
+      "topics": [
+        "awesome-list",
+        "free",
+        "programming",
+        "tutorial-code",
+        "tutorial-exercises",
+        "tutorials"
+      ],
+      "stars": 522888,
+      "forks": 49458,
+      "subscribers": 6781,
+      "open_issues": 520,
+      "created_at": "2018-05-09T12:03:18Z",
+      "updated_at": "2026-07-06T12:17:43Z",
+      "pushed_at": "2026-06-25T14:41:09Z",
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "license": "",
+      "sources": [
+        "search:pushed:>2026-06-22 stars:>200"
+      ],
+      "readme_summary": "[![Banner](https://codecrafters.io/images/new-ccgithub-banner.png)](https://codecrafters.io/github-banner) ## Build your own &lt;insert-technology-here&gt; This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch. > *What I cannot create, I do not understand — Richard Feynman.* It's a great way to learn. * [3D Renderer](#build-your-own-3d-renderer) * [AI Model](#ai-model) * [Augmented Reality](#build-your-own-augmented-reality) * [BitTorrent Client](#build-your-own-bittorrent-client) * [Blockchain / Cryptocurrency](#build-your-own-blockchain--cryptocurrency) * [Bot](#build-your-own-bot) * [Command-Line Tool](#build-your-own…",
+      "readme_length": 12000,
+      "delta_stars": 0,
+      "delta_subscribers": 0,
+      "delta_forks": 0,
+      "score_parts": {
+        "delta_stars": 0,
+        "delta_subscribers_weighted": 0,
+        "delta_forks_weighted": 0,
+        "recent_push_bonus": 10,
+        "readme_bonus": 15,
+        "topic_bonus": 0,
+        "awesome_penalty": 0,
+        "stale_penalty": 0,
+        "baseline_star_hint": 5228.88
+      },
+      "trend_score": 5253.88
+    },
+    {
+      "full_name": "sindresorhus/awesome",
+      "html_url": "https://github.com/sindresorhus/awesome",
+      "description": "😎 Awesome lists about all kinds of interesting topics",
+      "homepage": "",
+      "language": "",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "lists",
+        "resources",
+        "unicorns"
+      ],
+      "stars": 481995,
+      "forks": 35716,
+      "subscribers": 8256,
+      "open_issues": 91,
+      "created_at": "2014-07-11T13:42:37Z",
+      "updated_at": "2026-07-06T12:28:04Z",
+      "pushed_at": "2026-06-30T18:21:16Z",
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "license": "CC0-1.0",
+      "sources": [
+        "trending:daily",
+        "search:pushed:>2026-06-22 stars:>200"
+      ],
+      "readme_summary": "<div align=\"center\"> <img width=\"500\" height=\"350\" src=\"media/logo.svg\" alt=\"Awesome\"> <br> <br> <br> <br> <div> <sub>Check out my macOS app</sub> <br> <h2> <a href=\"https://sindresorhus.com/supercharge\">Supercharge</a> <br> <sup>Elevate your Mac experience</sup> </h2> </div> <br> <br> <br> <br> <hr> <p> <sup> <a href=\"https://github.com/sponsors/sindresorhus\">My open source work is supported by the community</a> </sup> </p> <p> <sup>Special thanks to:</sup> <br> <br> <br> <a href=\"https://depot.dev?utm_source=github&utm_medium=sindresorhus\"> <div> <picture> <source width=\"180\" media=\"(prefers-color-scheme: dark)\" srcset=\"https://sindresorhus.com/assets/thanks/depot-logo-dark.svg\"> <source…",
+      "readme_length": 12000,
+      "delta_stars": 0,
+      "delta_subscribers": 0,
+      "delta_forks": 0,
+      "score_parts": {
+        "delta_stars": 0,
+        "delta_subscribers_weighted": 0,
+        "delta_forks_weighted": 0,
+        "recent_push_bonus": 20,
+        "readme_bonus": 15,
+        "topic_bonus": 0,
+        "awesome_penalty": -80,
+        "stale_penalty": 0,
+        "baseline_star_hint": 4819.95
+      },
+      "trend_score": 4774.95
+    },
+    {
+      "full_name": "freeCodeCamp/freeCodeCamp",
+      "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "homepage": "https://contribute.freecodecamp.org",
+      "language": "TypeScript",
+      "topics": [
+        "careers",
+        "certification",
+        "community",
+        "curriculum",
+        "d3",
+        "education",
+        "freecodecamp",
+        "javascript",
+        "learn-to-code",
+        "math",
+        "nodejs",
+        "nonprofits",
+        "programming",
+        "react",
+        "teachers"
+      ],
+      "stars": 451163,
+      "forks": 45375,
+      "subscribers": 8586,
+      "open_issues": 215,
+      "created_at": "2014-12-24T17:49:19Z",
+      "updated_at": "2026-07-06T12:19:06Z",
+      "pushed_at": "2026-07-06T11:10:21Z",
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "license": "BSD-3-Clause",
+      "sources": [
+        "search:pushed:>2026-06-22 stars:>200"
+      ],
+      "readme_summary": "[![freeCodeCamp Social Banner](https://cdn.freecodecamp.org/platform/universal/fcc_banner_new.png)](https://www.freecodecamp.org/) [![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/) [![Discord](https://img.shields.io/discord/692816967895220344?logo=discord&label=Discord&color=5865F2)](https://discord.gg/PRyKn3Vbay) [![LFX Active Contributors](https://insights.linuxfoundation.org/api/badge/active-contributors?project=freecodecamp&repos=https://github.com/freeCodeCamp/freeCodeCamp)](https://insights.linuxfoundation.org/project/freecodecamp/repository/freecodecamp-freecodecamp) ## freeCodeCamp.org's open-source…",
+      "readme_length": 6646,
+      "delta_stars": 0,
+      "delta_subscribers": 0,
+      "delta_forks": 0,
+      "score_parts": {
+        "delta_stars": 0,
+        "delta_subscribers_weighted": 0,
+        "delta_forks_weighted": 0,
+        "recent_push_bonus": 20,
+        "readme_bonus": 15,
+        "topic_bonus": 0,
+        "awesome_penalty": 0,
+        "stale_penalty": 0,
+        "baseline_star_hint": 4511.63
+      },
+      "trend_score": 4546.63
+    }
+  ]
 }
