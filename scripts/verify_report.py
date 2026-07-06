@@ -55,10 +55,16 @@ def verify_report(report_text: str, top3: list[dict[str, Any]]) -> tuple[bool, l
         if bullet_count + numbered_count < 3:
             errors.append(f"第 {index} 个项目的应用场景示例应至少 3 条，当前为 {bullet_count + numbered_count} 条。")
 
-    data_limit_terms = ["GitHub 没有直接提供全站 3 天增长榜", "本地 snapshot", "Trending", "HTML"]
-    for term in data_limit_terms:
-        if term not in report_text:
-            errors.append(f"报告必须说明数据限制，缺少 `{term}`。")
+    if "数据限制说明" not in report_text and "数据限制" not in report_text:
+        errors.append("报告必须包含 `数据限制说明` 或 `数据限制` 章节。")
+    if "本地 snapshot" not in report_text:
+        errors.append("报告必须说明增量来自本项目保存的本地 snapshot 对比，缺少 `本地 snapshot`。")
+    if "baseline" not in report_text:
+        errors.append("报告必须说明第一次运行 baseline 逻辑，缺少 `baseline`。")
+    if "GitHub" not in report_text or ("3 天增长" not in report_text and "增量" not in report_text):
+        errors.append("报告必须说明 GitHub 不直接提供全站 3 天增长榜，或说明 3 天增量的数据来源。")
+    if "Trending" not in report_text or "HTML" not in report_text:
+        errors.append("报告必须说明 GitHub Trending 来源于 HTML 页面抓取且可能不稳定。")
 
     forbidden_terms = ["#### 一句话判断", "#### 具体使用方式", "#### 下一步验证建议"]
     for term in forbidden_terms:

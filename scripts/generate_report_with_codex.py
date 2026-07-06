@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 from datetime import datetime, timezone
 from typing import Any
 
@@ -48,7 +49,7 @@ REPORT_WRITER_PROMPT = """你是一个面向计算机专业大学生的前沿开
 - 每个项目标题下面必须立即输出一行 `- URL：原始 GitHub URL`，URL 必须和输入数据中的 url 字段完全一致。
 - 每个项目标题下必须包含这些四级标题：`#### 项目简介`、`#### 为什么值得关注`、`#### README 摘要`、`#### 具体怎么用`、`#### 适合谁关注`、`#### 应用场景示例`、`#### 风险或局限`。
 - 每个项目的 `#### 应用场景示例` 下必须至少有 3 条项目符号列表。
-- 报告必须包含 `## 数据限制` 章节，并在该章节中原样包含这些短语：`GitHub 没有直接提供全站 3 天增长榜`、`本地 snapshot`、`Trending`、`HTML`。
+- 报告可以包含数据限制说明；本地程序会在报告末尾强制追加固定的 `## 数据限制说明` 章节。
 - 不要把项目标题写成二级标题、列表项、表格行或加粗文本。
 """
 
@@ -73,6 +74,27 @@ README_SIGNAL_KEYWORDS = {
     "部署与运行环境": ["deploy", "docker", "compose", "kubernetes", "helm"],
     "评测或性能说明": ["benchmark", "evaluation", "eval", "performance"],
 }
+
+
+DATA_LIMIT_SECTION = """## 数据限制说明
+
+- GitHub 官方并不直接提供全站 3 天增长榜。
+- 本报告中的新增 Star、新增订阅、新增 Fork 来自本项目保存的本地 snapshot 对比。
+- 第一次运行只是 baseline，第二次运行开始才有更有意义的 3 天增量。
+- GitHub Trending 来源于 HTML 页面抓取，可能受页面结构变化影响。
+- README 信息可能不完整，具体使用效果需要人工进一步试用确认。
+"""
+
+
+def ensure_data_limit_section(report: str) -> str:
+    report = report.strip()
+    report = re.sub(
+        r"\n## 数据限制(?:说明)?\n.*?(?=\n## |\Z)",
+        "",
+        report,
+        flags=re.DOTALL,
+    ).strip()
+    return f"{report}\n\n{DATA_LIMIT_SECTION}".strip() + "\n"
 
 
 def build_llm_prompt(top3: list[dict[str, Any]], baseline: bool) -> str:
@@ -103,8 +125,6 @@ def build_llm_prompt(top3: list[dict[str, Any]], baseline: bool) -> str:
             "# GitHub 趋势项目观察 - YYYY-MM-DD",
             "## 本次结论",
             "## 报告重点",
-            "## 数据限制",
-            "GitHub 没有直接提供全站 3 天增长榜；增量来自本项目本地 snapshot 对比；Trending 页面来自 HTML 抓取，可能不稳定。",
             "## Top 3 项目",
             "### 1. owner/repo",
             "- URL：https://github.com/owner/repo",
@@ -443,7 +463,7 @@ def generate_report_locally(top3: list[dict[str, Any]], config: dict[str, Any], 
             "",
         ]
     )
-    return "\n".join(lines)
+    return ensure_data_limit_section("\n".join(lines))
 
 
 def resolve_llm_config(config: dict[str, Any]) -> dict[str, Any]:
@@ -606,6 +626,7 @@ def generate_report_with_llm(top3: list[dict[str, Any]], config: dict[str, Any],
         response = client.chat.completions.create(**request)
         report = extract_chat_completion_text(response)
         report = ensure_required_project_urls(report, top3)
+        report = ensure_data_limit_section(report)
     except Exception as exc:
         provider = llm_config["provider"]
         reason = f"{provider} report generation failed: {exc}"

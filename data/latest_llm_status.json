@@ -1,14 +1,14 @@
 {
-  "run_at": "2026-07-06T08:14:13Z",
+  "run_at": "2026-07-06T09:31:57Z",
   "enabled": true,
   "provider": "deepseek",
   "model": "deepseek-v4-flash",
   "base_url": "https://api.deepseek.com",
   "api_key_env": "DEEPSEEK_API_KEY",
-  "api_key_present": false,
-  "attempted": false,
-  "used_llm": false,
-  "fallback": true,
-  "reason": "DEEPSEEK_API_KEY is not set in the Python process environment",
+  "api_key_present": true,
+  "attempted": true,
+  "used_llm": true,
+  "fallback": false,
+  "reason": "llm.report.generated",
   "failed_report_path": ""
 }

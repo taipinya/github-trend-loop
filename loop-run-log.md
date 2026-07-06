@@ -138,3 +138,73 @@
 - warning: Repo detail failed [DeusData/codebase-memory-mcp]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
 - warning: Repo detail failed [stablyai/orca]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
 - warning: Repo detail failed [calesthio/OpenMontage]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+
+## 2026-07-06T09:21:16Z
+
+- Candidate count after merge: 286
+- Detailed repo count: 30
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-06T092116Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-06T092116Z.json
+- Report verification result: failed
+- LLM provider: deepseek
+- Top 3:
+- Zackriya-Solutions/meetily | score=197 | https://github.com/Zackriya-Solutions/meetily
+- asgeirtj/system_prompts_leaks | score=147 | https://github.com/asgeirtj/system_prompts_leaks
+- Leonxlnx/taste-skill | score=135 | https://github.com/Leonxlnx/taste-skill
+- Warnings:
+- warning: GITHUB_TOKEN is not set; GitHub API rate limits will be lower.
+- warning: Search query failed [topic:robotics stars:>50 pushed:>2026-06-06]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [DeusData/codebase-memory-mcp]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [stablyai/orca]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [calesthio/OpenMontage]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [JCodesMore/ai-website-cloner-template]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [ZhuLinsen/daily_stock_analysis]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [allenai/olmocr]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [topoteretes/cognee]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [DietrichGebert/ponytail]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [baidu/Unlimited-OCR]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [XiaomiMiMo/MiMo-Code]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [shadcn/improve]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [omnigent-ai/omnigent]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [deepseek-ai/DeepSpec]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [langchain-ai/openwiki]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [cobusgreyling/loop-engineering]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [zhongerxin/Cowart]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [bikini/exploitarium]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [makerspet/oomwoo]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+
+## 2026-07-06T09:31:00Z
+
+- Candidate count after merge: 286
+- Detailed repo count: 0
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-06T093100Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-06T093100Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- none
+- Warnings:
+- warning: GITHUB_TOKEN is not set; GitHub API rate limits will be lower.
+- warning: Search query failed [topic:robotics stars:>50 pushed:>2026-06-06]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [Zackriya-Solutions/meetily]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [openai/codex-plugin-cc]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [asgeirtj/system_prompts_leaks]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [Leonxlnx/taste-skill]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [alirezarezvani/claude-skills]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [rommapp/romm]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [ogulcancelik/herdr]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [alibaba/page-agent]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [harvard-edge/cs249r_book]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [usestrix/strix]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [hesreallyhim/awesome-claude-code]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [coreyhaines31/marketingskills]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [JuliusBrussee/caveman]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [CoplayDev/unity-mcp]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [facebook/astryx]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [immich-app/immich]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [ruvnet/RuView]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
+- warning: Repo detail failed [gastownhall/gastown]: GitHub API rate limited or forbidden: {"message":"API rate limit exceeded for 141.11.147.97. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"h
