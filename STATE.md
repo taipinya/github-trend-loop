@@ -1,10 +1,10 @@
 # STATE
 
-- Last run: 2026-07-06T12:27:47Z
-- Baseline status: baseline established; next run can calculate deltas
+- Last run: 2026-07-07T05:55:20Z
+- Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-07-06T122747Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-07-06T122747Z.json
+- Latest archived report path: reports/2026-07-07T055520Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-07-07T055520Z.json
 - Candidate count after merge: 309
 - Detailed repo count: 308
 - LLM provider: deepseek
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - codecrafters-io/build-your-own-x (https://github.com/codecrafters-io/build-your-own-x) score=5253.88
-  - sindresorhus/awesome (https://github.com/sindresorhus/awesome) score=4774.95
-  - freeCodeCamp/freeCodeCamp (https://github.com/freeCodeCamp/freeCodeCamp) score=4546.63
+  - langchain-ai/openwiki (https://github.com/langchain-ai/openwiki) score=1695
+  - asgeirtj/system_prompts_leaks (https://github.com/asgeirtj/system_prompts_leaks) score=1638
+  - Zackriya-Solutions/meetily (https://github.com/Zackriya-Solutions/meetily) score=1612
 - Warnings:
   - none
 - Next run notes:

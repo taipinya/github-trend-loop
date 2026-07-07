@@ -225,3 +225,20 @@
 - freeCodeCamp/freeCodeCamp | score=4546.63 | https://github.com/freeCodeCamp/freeCodeCamp
 - Warnings:
 - warning: none
+
+## 2026-07-07T05:55:20Z
+
+- Candidate count after merge: 309
+- Detailed repo count: 308
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-07T055520Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-07T055520Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- langchain-ai/openwiki | score=1695 | https://github.com/langchain-ai/openwiki
+- asgeirtj/system_prompts_leaks | score=1638 | https://github.com/asgeirtj/system_prompts_leaks
+- Zackriya-Solutions/meetily | score=1612 | https://github.com/Zackriya-Solutions/meetily
+- Warnings:
+- warning: none
