@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-07-07T05:55:20Z
+- Last run: 2026-07-10T05:48:34Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-07-07T055520Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-07-07T055520Z.json
-- Candidate count after merge: 309
-- Detailed repo count: 308
+- Latest archived report path: reports/2026-07-10T054834Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-07-10T054834Z.json
+- Candidate count after merge: 315
+- Detailed repo count: 314
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - langchain-ai/openwiki (https://github.com/langchain-ai/openwiki) score=1695
-  - asgeirtj/system_prompts_leaks (https://github.com/asgeirtj/system_prompts_leaks) score=1638
-  - Zackriya-Solutions/meetily (https://github.com/Zackriya-Solutions/meetily) score=1612
+  - addyosmani/agent-skills (https://github.com/addyosmani/agent-skills) score=6068
+  - asgeirtj/system_prompts_leaks (https://github.com/asgeirtj/system_prompts_leaks) score=4751
+  - obra/superpowers (https://github.com/obra/superpowers) score=3810
 - Warnings:
   - none
 - Next run notes:

@@ -242,3 +242,20 @@
 - Zackriya-Solutions/meetily | score=1612 | https://github.com/Zackriya-Solutions/meetily
 - Warnings:
 - warning: none
+
+## 2026-07-10T05:48:34Z
+
+- Candidate count after merge: 315
+- Detailed repo count: 314
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-10T054834Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-10T054834Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- addyosmani/agent-skills | score=6068 | https://github.com/addyosmani/agent-skills
+- asgeirtj/system_prompts_leaks | score=4751 | https://github.com/asgeirtj/system_prompts_leaks
+- obra/superpowers | score=3810 | https://github.com/obra/superpowers
+- Warnings:
+- warning: none
