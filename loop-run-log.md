@@ -259,3 +259,20 @@
 - obra/superpowers | score=3810 | https://github.com/obra/superpowers
 - Warnings:
 - warning: none
+
+## 2026-07-13T05:20:52Z
+
+- Candidate count after merge: 316
+- Detailed repo count: 315
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-13T052052Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-13T052052Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- x4gKing/X4G | score=6714 | https://github.com/x4gKing/X4G
+- mattpocock/skills | score=4500 | https://github.com/mattpocock/skills
+- HKUDS/Vibe-Trading | score=3133 | https://github.com/HKUDS/Vibe-Trading
+- Warnings:
+- warning: none
