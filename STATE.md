@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-07-13T05:20:52Z
+- Last run: 2026-07-16T04:46:38Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-07-13T052052Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-07-13T052052Z.json
-- Candidate count after merge: 316
-- Detailed repo count: 315
+- Latest archived report path: reports/2026-07-16T044638Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-07-16T044638Z.json
+- Candidate count after merge: 311
+- Detailed repo count: 310
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - x4gKing/X4G (https://github.com/x4gKing/X4G) score=6714
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=4500
-  - HKUDS/Vibe-Trading (https://github.com/HKUDS/Vibe-Trading) score=3133
+  - JustVugg/colibri (https://github.com/JustVugg/colibri) score=8954
+  - mattpocock/skills (https://github.com/mattpocock/skills) score=6451
+  - Graphify-Labs/graphify (https://github.com/Graphify-Labs/graphify) score=5338
 - Warnings:
   - none
 - Next run notes:

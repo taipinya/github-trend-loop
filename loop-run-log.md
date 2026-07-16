@@ -276,3 +276,20 @@
 - HKUDS/Vibe-Trading | score=3133 | https://github.com/HKUDS/Vibe-Trading
 - Warnings:
 - warning: none
+
+## 2026-07-16T04:46:38Z
+
+- Candidate count after merge: 311
+- Detailed repo count: 310
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-16T044638Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-16T044638Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- JustVugg/colibri | score=8954 | https://github.com/JustVugg/colibri
+- mattpocock/skills | score=6451 | https://github.com/mattpocock/skills
+- Graphify-Labs/graphify | score=5338 | https://github.com/Graphify-Labs/graphify
+- Warnings:
+- warning: none
