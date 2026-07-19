@@ -293,3 +293,20 @@
 - Graphify-Labs/graphify | score=5338 | https://github.com/Graphify-Labs/graphify
 - Warnings:
 - warning: none
+
+## 2026-07-19T04:57:03Z
+
+- Candidate count after merge: 303
+- Detailed repo count: 302
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-19T045703Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-19T045703Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- xai-org/grok-build | score=19156 | https://github.com/xai-org/grok-build
+- mattpocock/skills | score=4937 | https://github.com/mattpocock/skills
+- Nutlope/hallmark | score=4299 | https://github.com/Nutlope/hallmark
+- Warnings:
+- warning: none
