@@ -310,3 +310,20 @@
 - Nutlope/hallmark | score=4299 | https://github.com/Nutlope/hallmark
 - Warnings:
 - warning: none
+
+## 2026-07-22T04:54:21Z
+
+- Candidate count after merge: 315
+- Detailed repo count: 314
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-22T045421Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-22T045421Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- koala73/worldmonitor | score=5545 | https://github.com/koala73/worldmonitor
+- tirth8205/code-review-graph | score=5065 | https://github.com/tirth8205/code-review-graph
+- mattpocock/skills | score=4834 | https://github.com/mattpocock/skills
+- Warnings:
+- warning: none

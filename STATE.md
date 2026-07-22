@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-07-19T04:57:03Z
+- Last run: 2026-07-22T04:54:21Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-07-19T045703Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-07-19T045703Z.json
-- Candidate count after merge: 303
-- Detailed repo count: 302
+- Latest archived report path: reports/2026-07-22T045421Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-07-22T045421Z.json
+- Candidate count after merge: 315
+- Detailed repo count: 314
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - xai-org/grok-build (https://github.com/xai-org/grok-build) score=19156
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=4937
-  - Nutlope/hallmark (https://github.com/Nutlope/hallmark) score=4299
+  - koala73/worldmonitor (https://github.com/koala73/worldmonitor) score=5545
+  - tirth8205/code-review-graph (https://github.com/tirth8205/code-review-graph) score=5065
+  - mattpocock/skills (https://github.com/mattpocock/skills) score=4834
 - Warnings:
   - none
 - Next run notes:
