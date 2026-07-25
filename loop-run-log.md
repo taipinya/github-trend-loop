@@ -327,3 +327,20 @@
 - mattpocock/skills | score=4834 | https://github.com/mattpocock/skills
 - Warnings:
 - warning: none
+
+## 2026-07-25T04:52:02Z
+
+- Candidate count after merge: 313
+- Detailed repo count: 313
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-25T045202Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-25T045202Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- koala73/worldmonitor | score=9132 | https://github.com/koala73/worldmonitor
+- mattpocock/skills | score=7672 | https://github.com/mattpocock/skills
+- diegosouzapw/OmniRoute | score=6534 | https://github.com/diegosouzapw/OmniRoute
+- Warnings:
+- warning: none
