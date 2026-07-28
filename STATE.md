@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-07-25T04:52:02Z
+- Last run: 2026-07-28T04:49:53Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-07-25T045202Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-07-25T045202Z.json
-- Candidate count after merge: 313
-- Detailed repo count: 313
+- Latest archived report path: reports/2026-07-28T044953Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-07-28T044953Z.json
+- Candidate count after merge: 318
+- Detailed repo count: 318
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - koala73/worldmonitor (https://github.com/koala73/worldmonitor) score=9132
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=7672
-  - diegosouzapw/OmniRoute (https://github.com/diegosouzapw/OmniRoute) score=6534
+  - andrewyng/openworker (https://github.com/andrewyng/openworker) score=7180
+  - mattpocock/skills (https://github.com/mattpocock/skills) score=5716
+  - bojieli/ai-agent-book (https://github.com/bojieli/ai-agent-book) score=4883
 - Warnings:
   - none
 - Next run notes:

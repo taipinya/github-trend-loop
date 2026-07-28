@@ -344,3 +344,20 @@
 - diegosouzapw/OmniRoute | score=6534 | https://github.com/diegosouzapw/OmniRoute
 - Warnings:
 - warning: none
+
+## 2026-07-28T04:49:53Z
+
+- Candidate count after merge: 318
+- Detailed repo count: 318
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-07-28T044953Z-github-trends.md
+- Snapshot path: data/snapshots/2026-07-28T044953Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- andrewyng/openworker | score=7180 | https://github.com/andrewyng/openworker
+- mattpocock/skills | score=5716 | https://github.com/mattpocock/skills
+- bojieli/ai-agent-book | score=4883 | https://github.com/bojieli/ai-agent-book
+- Warnings:
+- warning: none
