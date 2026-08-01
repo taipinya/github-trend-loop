@@ -361,3 +361,20 @@
 - bojieli/ai-agent-book | score=4883 | https://github.com/bojieli/ai-agent-book
 - Warnings:
 - warning: none
+
+## 2026-08-01T05:12:56Z
+
+- Candidate count after merge: 307
+- Detailed repo count: 307
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-08-01T051256Z-github-trends.md
+- Snapshot path: data/snapshots/2026-08-01T051256Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- mattpocock/skills | score=7786 | https://github.com/mattpocock/skills
+- bojieli/ai-agent-book | score=6921 | https://github.com/bojieli/ai-agent-book
+- MoonshotAI/Kimi-K3 | score=6537 | https://github.com/MoonshotAI/Kimi-K3
+- Warnings:
+- warning: none

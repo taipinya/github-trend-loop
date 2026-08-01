@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-07-28T04:49:53Z
+- Last run: 2026-08-01T05:12:56Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-07-28T044953Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-07-28T044953Z.json
-- Candidate count after merge: 318
-- Detailed repo count: 318
+- Latest archived report path: reports/2026-08-01T051256Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-08-01T051256Z.json
+- Candidate count after merge: 307
+- Detailed repo count: 307
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - andrewyng/openworker (https://github.com/andrewyng/openworker) score=7180
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=5716
-  - bojieli/ai-agent-book (https://github.com/bojieli/ai-agent-book) score=4883
+  - mattpocock/skills (https://github.com/mattpocock/skills) score=7786
+  - bojieli/ai-agent-book (https://github.com/bojieli/ai-agent-book) score=6921
+  - MoonshotAI/Kimi-K3 (https://github.com/MoonshotAI/Kimi-K3) score=6537
 - Warnings:
   - none
 - Next run notes:
