@@ -378,3 +378,20 @@
 - MoonshotAI/Kimi-K3 | score=6537 | https://github.com/MoonshotAI/Kimi-K3
 - Warnings:
 - warning: none
+
+## 2026-08-07T04:16:16Z
+
+- Candidate count after merge: 302
+- Detailed repo count: 302
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-08-07T041616Z-github-trends.md
+- Snapshot path: data/snapshots/2026-08-07T041616Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- yc-software/qm | score=12037 | https://github.com/yc-software/qm
+- zhaoxuya520/reverse-skill | score=11310 | https://github.com/zhaoxuya520/reverse-skill
+- mattpocock/skills | score=11307 | https://github.com/mattpocock/skills
+- Warnings:
+- warning: none

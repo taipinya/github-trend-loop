@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-08-01T05:12:56Z
+- Last run: 2026-08-07T04:16:16Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-08-01T051256Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-08-01T051256Z.json
-- Candidate count after merge: 307
-- Detailed repo count: 307
+- Latest archived report path: reports/2026-08-07T041616Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-08-07T041616Z.json
+- Candidate count after merge: 302
+- Detailed repo count: 302
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=7786
-  - bojieli/ai-agent-book (https://github.com/bojieli/ai-agent-book) score=6921
-  - MoonshotAI/Kimi-K3 (https://github.com/MoonshotAI/Kimi-K3) score=6537
+  - yc-software/qm (https://github.com/yc-software/qm) score=12037
+  - zhaoxuya520/reverse-skill (https://github.com/zhaoxuya520/reverse-skill) score=11310
+  - mattpocock/skills (https://github.com/mattpocock/skills) score=11307
 - Warnings:
   - none
 - Next run notes:
