@@ -395,3 +395,20 @@
 - mattpocock/skills | score=11307 | https://github.com/mattpocock/skills
 - Warnings:
 - warning: none
+
+## 2026-08-22T02:44:00Z
+
+- Candidate count after merge: 306
+- Detailed repo count: 305
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-08-22T024400Z-github-trends.md
+- Snapshot path: data/snapshots/2026-08-22T024400Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- mattpocock/skills | score=26240 | https://github.com/mattpocock/skills
+- public-apis/public-apis | score=16438 | https://github.com/public-apis/public-apis
+- harry0703/MoneyPrinterTurbo | score=16309 | https://github.com/harry0703/MoneyPrinterTurbo
+- Warnings:
+- warning: none
