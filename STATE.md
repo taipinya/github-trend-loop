@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-08-22T02:44:00Z
+- Last run: 2026-08-31T07:45:14Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-08-22T024400Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-08-22T024400Z.json
-- Candidate count after merge: 306
-- Detailed repo count: 305
+- Latest archived report path: reports/2026-08-31T074514Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-08-31T074514Z.json
+- Candidate count after merge: 315
+- Detailed repo count: 313
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
 - Latest Top 3:
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=26240
-  - public-apis/public-apis (https://github.com/public-apis/public-apis) score=16438
-  - harry0703/MoneyPrinterTurbo (https://github.com/harry0703/MoneyPrinterTurbo) score=16309
+  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=32098
+  - mattpocock/skills (https://github.com/mattpocock/skills) score=14816
+  - DietrichGebert/ponytail (https://github.com/DietrichGebert/ponytail) score=11173
 - Warnings:
   - none
 - Next run notes:

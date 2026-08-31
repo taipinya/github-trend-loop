@@ -412,3 +412,20 @@
 - harry0703/MoneyPrinterTurbo | score=16309 | https://github.com/harry0703/MoneyPrinterTurbo
 - Warnings:
 - warning: none
+
+## 2026-08-31T07:45:14Z
+
+- Candidate count after merge: 315
+- Detailed repo count: 313
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-08-31T074514Z-github-trends.md
+- Snapshot path: data/snapshots/2026-08-31T074514Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- deepseek-ai/deepseek-harness | score=32098 | https://github.com/deepseek-ai/deepseek-harness
+- mattpocock/skills | score=14816 | https://github.com/mattpocock/skills
+- DietrichGebert/ponytail | score=11173 | https://github.com/DietrichGebert/ponytail
+- Warnings:
+- warning: none
