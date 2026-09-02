@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-08-31T07:45:14Z
+- Last run: 2026-09-02T08:20:48Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-08-31T074514Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-08-31T074514Z.json
-- Candidate count after merge: 315
-- Detailed repo count: 313
+- Latest archived report path: reports/2026-09-02T082048Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-09-02T082048Z.json
+- Candidate count after merge: 308
+- Detailed repo count: 306
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=32098
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=14816
-  - DietrichGebert/ponytail (https://github.com/DietrichGebert/ponytail) score=11173
+  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=7594
+  - THU-MAIC/OpenMAIC (https://github.com/THU-MAIC/OpenMAIC) score=5900
+  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=4455
 - Warnings:
   - none
 - Next run notes:

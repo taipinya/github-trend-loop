@@ -429,3 +429,20 @@
 - DietrichGebert/ponytail | score=11173 | https://github.com/DietrichGebert/ponytail
 - Warnings:
 - warning: none
+
+## 2026-09-02T08:20:48Z
+
+- Candidate count after merge: 308
+- Detailed repo count: 306
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-02T082048Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-02T082048Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- tt-a1i/archify | score=7594 | https://github.com/tt-a1i/archify
+- THU-MAIC/OpenMAIC | score=5900 | https://github.com/THU-MAIC/OpenMAIC
+- deepseek-ai/deepseek-harness | score=4455 | https://github.com/deepseek-ai/deepseek-harness
+- Warnings:
+- warning: none
