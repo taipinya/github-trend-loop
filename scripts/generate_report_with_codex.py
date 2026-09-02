@@ -500,6 +500,21 @@ def resolve_llm_config(config: dict[str, Any]) -> dict[str, Any]:
     llm_config["temperature"] = llm_config.get("temperature", 0.4)
     llm_config["enabled"] = bool(llm_config.get("enabled", False))
     llm_config["require_success"] = bool(llm_config.get("require_success", True))
+    llm_config["max_attempts"] = max(1, int(llm_config.get("max_attempts", 2)))
+
+    thinking = llm_config.get("thinking")
+    if isinstance(thinking, bool):
+        thinking = "enabled" if thinking else "disabled"
+    elif thinking is not None:
+        thinking = str(thinking).lower()
+    if thinking not in {None, "enabled", "disabled"}:
+        raise ValueError("llm.thinking must be `enabled`, `disabled`, or omitted")
+    if thinking is None and provider == "deepseek":
+        # DeepSeek V4 enables high-effort thinking by default. Report writing is
+        # a structured generation task, so reserve the output budget for the
+        # final Markdown instead of reasoning_content.
+        thinking = "disabled"
+    llm_config["thinking"] = thinking
     return llm_config
 
 
@@ -522,6 +537,37 @@ def extract_chat_completion_text(response: Any) -> str:
                 chunks.append(str(item.text))
         return "\n".join(chunks).strip()
     return ""
+
+
+def response_field(value: Any, name: str, default: Any = None) -> Any:
+    if isinstance(value, dict):
+        return value.get(name, default)
+    return getattr(value, name, default)
+
+
+def chat_completion_diagnostics(response: Any) -> dict[str, Any]:
+    choices = response_field(response, "choices", None) or []
+    choice = choices[0] if choices else None
+    message = response_field(choice, "message", None) if choice else None
+    reasoning_content = response_field(message, "reasoning_content", None) if message else None
+    usage = response_field(response, "usage", None)
+    completion_details = response_field(usage, "completion_tokens_details", None) if usage else None
+
+    usage_summary: dict[str, Any] = {}
+    for field in ("prompt_tokens", "completion_tokens", "total_tokens"):
+        value = response_field(usage, field, None) if usage else None
+        if value is not None:
+            usage_summary[field] = value
+    reasoning_tokens = response_field(completion_details, "reasoning_tokens", None) if completion_details else None
+    if reasoning_tokens is not None:
+        usage_summary["reasoning_tokens"] = reasoning_tokens
+
+    return {
+        "finish_reason": response_field(choice, "finish_reason", None) if choice else None,
+        "content_chars": len(extract_chat_completion_text(response)),
+        "reasoning_chars": len(reasoning_content) if isinstance(reasoning_content, str) else 0,
+        "usage": usage_summary,
+    }
 
 
 def ensure_required_project_urls(report: str, top3: list[dict[str, Any]]) -> str:
@@ -561,6 +607,9 @@ def generate_report_with_llm(top3: list[dict[str, Any]], config: dict[str, Any],
         "fallback": True,
         "reason": "",
         "failed_report_path": "",
+        "thinking": llm_config["thinking"],
+        "max_attempts": llm_config["max_attempts"],
+        "attempts": [],
     }
 
     def save_status(reason: str) -> None:
@@ -599,6 +648,7 @@ def generate_report_with_llm(top3: list[dict[str, Any]], config: dict[str, Any],
 
     model_env = f"{llm_config['provider'].upper()}_MODEL"
     model = os.getenv(model_env) or os.getenv("LLM_MODEL") or llm_config["model"]
+    status["model"] = model
     client_kwargs: dict[str, Any] = {"api_key": api_key}
     if llm_config.get("base_url"):
         client_kwargs["base_url"] = llm_config["base_url"]
@@ -619,52 +669,96 @@ def generate_report_with_llm(top3: list[dict[str, Any]], config: dict[str, Any],
     }
     if llm_config["temperature"] is not None:
         request["temperature"] = float(llm_config["temperature"])
-
-    try:
-        status["attempted"] = True
-        client = OpenAI(**client_kwargs)
-        response = client.chat.completions.create(**request)
-        report = extract_chat_completion_text(response)
-        report = ensure_required_project_urls(report, top3)
-        report = ensure_data_limit_section(report)
-    except Exception as exc:
-        provider = llm_config["provider"]
-        reason = f"{provider} report generation failed: {exc}"
-        print(reason)
-        fail_or_fallback(reason)
-        return None
-
-    if not report:
-        reason = "LLM report generation returned empty text"
-        print(reason)
-        fail_or_fallback(reason)
-        return None
+    if llm_config["provider"] == "deepseek" and llm_config["thinking"]:
+        request["extra_body"] = {"thinking": {"type": llm_config["thinking"]}}
 
     try:
         from verify_report import verify_report
-
-        ok, errors = verify_report(report, top3)
-        if not ok:
-            reason = "LLM report failed verification"
-            print("LLM report failed verification.")
-            for error in errors:
-                print(f"report_error: {error}")
-            status["verification_errors"] = errors
-            failed_report_path = "data/latest_llm_report_failed.md"
-            write_text(failed_report_path, report)
-            status["failed_report_path"] = failed_report_path
-            fail_or_fallback(reason)
-            return None
     except Exception as exc:
-        reason = f"LLM report verification failed unexpectedly: {exc}"
+        reason = f"LLM report verifier could not be loaded: {exc}"
         print(reason)
         fail_or_fallback(reason)
         return None
 
-    status["used_llm"] = True
-    status["fallback"] = False
-    save_status("llm.report.generated")
-    return report
+    try:
+        client = OpenAI(**client_kwargs)
+    except Exception as exc:
+        reason = f"{llm_config['provider']} client initialization failed: {exc}"
+        print(reason)
+        fail_or_fallback(reason)
+        return None
+    last_reason = "LLM report generation failed"
+    max_attempts = llm_config["max_attempts"]
+    failed_report_path = "data/latest_llm_report_failed.md"
+
+    for attempt_number in range(1, max_attempts + 1):
+        attempt_status: dict[str, Any] = {"attempt": attempt_number}
+        status["attempted"] = True
+        try:
+            response = client.chat.completions.create(**request)
+        except Exception as exc:
+            last_reason = f"{llm_config['provider']} report generation failed: {exc}"
+            attempt_status.update({"result": "api_error", "error": str(exc)})
+            status["attempts"].append(attempt_status)
+            print(f"LLM attempt {attempt_number}/{max_attempts} failed: {exc}")
+            continue
+
+        diagnostics = chat_completion_diagnostics(response)
+        attempt_status.update(diagnostics)
+        raw_report = extract_chat_completion_text(response)
+        print(
+            f"LLM attempt {attempt_number}/{max_attempts}: "
+            f"finish_reason={diagnostics['finish_reason']}, "
+            f"content_chars={diagnostics['content_chars']}, "
+            f"reasoning_chars={diagnostics['reasoning_chars']}"
+        )
+
+        # Check the provider's raw final answer before adding deterministic
+        # URLs and data-limit text. Otherwise an empty answer looks non-empty.
+        if not raw_report:
+            finish_reason = diagnostics["finish_reason"]
+            suffix = f" (finish_reason={finish_reason})" if finish_reason else ""
+            last_reason = f"LLM report generation returned empty text{suffix}"
+            attempt_status["result"] = "empty_content"
+            status["attempts"].append(attempt_status)
+            status["failed_report_path"] = failed_report_path
+            write_text(failed_report_path, raw_report)
+            print(last_reason)
+            continue
+
+        report = ensure_required_project_urls(raw_report, top3)
+        report = ensure_data_limit_section(report)
+        try:
+            ok, errors = verify_report(report, top3)
+        except Exception as exc:
+            last_reason = f"LLM report verifier failed unexpectedly: {exc}"
+            attempt_status.update({"result": "verifier_error", "error": str(exc)})
+            status["attempts"].append(attempt_status)
+            print(last_reason)
+            continue
+        if not ok:
+            last_reason = "LLM report failed verification"
+            attempt_status["result"] = "verification_failed"
+            attempt_status["verification_errors"] = errors
+            status["attempts"].append(attempt_status)
+            status["verification_errors"] = errors
+            status["failed_report_path"] = failed_report_path
+            write_text(failed_report_path, report)
+            print(f"LLM attempt {attempt_number}/{max_attempts} failed verification.")
+            for error in errors:
+                print(f"report_error: {error}")
+            continue
+
+        attempt_status["result"] = "success"
+        status["attempts"].append(attempt_status)
+        status.pop("verification_errors", None)
+        status["used_llm"] = True
+        status["fallback"] = False
+        save_status("llm.report.generated")
+        return report
+
+    fail_or_fallback(last_reason)
+    return None
 
 
 def generate_report_with_openai(top3: list[dict[str, Any]], config: dict[str, Any], baseline: bool) -> str | None:

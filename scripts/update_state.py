@@ -37,7 +37,7 @@ def update_state(
   - Search API rate limits are lower without `GITHUB_TOKEN`.
   - GitHub does not provide a global 3-day growth leaderboard; deltas come from local snapshot comparison.
   - README summaries and model-written explanations should be checked manually.
-  - DeepSeek API/report verification failures should stop CI to avoid committing low-quality reports.
+  - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
 {top_lines}
 - Warnings:

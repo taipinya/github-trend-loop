@@ -85,7 +85,7 @@ set DEEPSEEK_API_KEY=你的 DeepSeek API key
 python scripts/run_loop.py
 ```
 
-`GITHUB_TOKEN` 缺失时可以继续运行，但 GitHub API rate limit 更低。`DEEPSEEK_API_KEY` 缺失且 `llm.enabled: true` 时会失败，避免提交低质量兜底报告。
+`GITHUB_TOKEN` 缺失时可以继续运行，但 GitHub API rate limit 更低。`DEEPSEEK_API_KEY` 缺失且 `llm.enabled: true` 时会记录 LLM 失败状态，并使用通过同一质量校验的本地模板报告；如需强制 LLM 成功，可将 `llm.require_success` 改为 `true`。
 
 ## GitHub Actions 部署
 
@@ -191,10 +191,14 @@ llm:
   model: deepseek-v4-flash
   base_url: https://api.deepseek.com
   api_key_env: DEEPSEEK_API_KEY
-  max_output_tokens: 5000
+  thinking: disabled
+  max_output_tokens: 8000
+  max_attempts: 2
   temperature: 0.4
-  require_success: true
+  require_success: false
 ```
+
+结构化报告默认关闭 DeepSeek thinking，避免推理 token 占满输出预算后 `message.content` 为空。模型返回空正文、API 临时错误或报告格式校验失败时会自动重试一次；两次均失败后，默认回退到本地模板并继续完成 Loop。将 `require_success` 设为 `true` 可恢复“LLM 失败即终止 CI”的严格模式。
 
 项目使用 `openai` Python SDK 调用 OpenAI-compatible provider。切回 OpenAI 时可改为：
 
@@ -237,6 +241,9 @@ Get-Content .\data\latest_llm_status.json
 - `fallback`：是否回退到本地模板。
 - `reason`：失败或回退原因。
 - `failed_report_path`：LLM 原始失败稿路径。
+- `thinking`：本次请求是否启用 DeepSeek thinking。
+- `max_attempts`：允许的最大 LLM 尝试次数。
+- `attempts`：逐次记录 `finish_reason`、正文字符数、推理字符数、token 用量和结果；不会记录推理正文或 API key。
 
 如果 GitHub Actions 失败，优先看：
 
@@ -245,6 +252,12 @@ Get-Content .\data\latest_llm_status.json
 - `data/latest_llm_report_failed.md` artifact。
 - GitHub API rate limit warning。
 - report verification error。
+
+运行离线回归测试：
+
+```powershell
+python -m unittest discover -s tests -v
+```
 
 ## 项目结构
 
