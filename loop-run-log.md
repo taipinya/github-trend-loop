@@ -463,3 +463,20 @@
 - DietrichGebert/ponytail | score=3880 | https://github.com/DietrichGebert/ponytail
 - Warnings:
 - warning: none
+
+## 2026-09-07T06:41:06Z
+
+- Candidate count after merge: 309
+- Detailed repo count: 307
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-07T064106Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-07T064106Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- mattpocock/skills | score=8282 | https://github.com/mattpocock/skills
+- DietrichGebert/ponytail | score=6651 | https://github.com/DietrichGebert/ponytail
+- tt-a1i/archify | score=5669 | https://github.com/tt-a1i/archify
+- Warnings:
+- warning: none

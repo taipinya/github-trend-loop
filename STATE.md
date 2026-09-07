@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-09-04T06:35:34Z
+- Last run: 2026-09-07T06:41:06Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-09-04T063534Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-09-04T063534Z.json
+- Latest archived report path: reports/2026-09-07T064106Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-09-07T064106Z.json
 - Candidate count after merge: 309
-- Detailed repo count: 306
+- Detailed repo count: 307
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=4327
-  - mattpocock/skills (https://github.com/mattpocock/skills) score=4280
-  - DietrichGebert/ponytail (https://github.com/DietrichGebert/ponytail) score=3880
+  - mattpocock/skills (https://github.com/mattpocock/skills) score=8282
+  - DietrichGebert/ponytail (https://github.com/DietrichGebert/ponytail) score=6651
+  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=5669
 - Warnings:
   - none
 - Next run notes:
