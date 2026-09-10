@@ -480,3 +480,20 @@
 - tt-a1i/archify | score=5669 | https://github.com/tt-a1i/archify
 - Warnings:
 - warning: none
+
+## 2026-09-10T06:42:02Z
+
+- Candidate count after merge: 301
+- Detailed repo count: 299
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-10T064202Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-10T064202Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- tt-a1i/archify | score=5836 | https://github.com/tt-a1i/archify
+- cathrynlavery/diagram-design | score=4796 | https://github.com/cathrynlavery/diagram-design
+- deepseek-ai/deepseek-harness | score=4634 | https://github.com/deepseek-ai/deepseek-harness
+- Warnings:
+- warning: none
