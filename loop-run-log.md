@@ -497,3 +497,20 @@
 - deepseek-ai/deepseek-harness | score=4634 | https://github.com/deepseek-ai/deepseek-harness
 - Warnings:
 - warning: none
+
+## 2026-09-13T06:50:46Z
+
+- Candidate count after merge: 308
+- Detailed repo count: 307
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-13T065046Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-13T065046Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- ayghri/i-have-adhd | score=9066 | https://github.com/ayghri/i-have-adhd
+- deepseek-ai/deepseek-harness | score=5093 | https://github.com/deepseek-ai/deepseek-harness
+- tt-a1i/archify | score=4082 | https://github.com/tt-a1i/archify
+- Warnings:
+- warning: none

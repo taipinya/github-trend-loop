@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-09-10T06:42:02Z
+- Last run: 2026-09-13T06:50:46Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-09-10T064202Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-09-10T064202Z.json
-- Candidate count after merge: 301
-- Detailed repo count: 299
+- Latest archived report path: reports/2026-09-13T065046Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-09-13T065046Z.json
+- Candidate count after merge: 308
+- Detailed repo count: 307
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=5836
-  - cathrynlavery/diagram-design (https://github.com/cathrynlavery/diagram-design) score=4796
-  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=4634
+  - ayghri/i-have-adhd (https://github.com/ayghri/i-have-adhd) score=9066
+  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=5093
+  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=4082
 - Warnings:
   - none
 - Next run notes:
