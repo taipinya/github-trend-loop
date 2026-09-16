@@ -1,10 +1,10 @@
 # STATE
 
-- Last run: 2026-09-13T06:50:46Z
+- Last run: 2026-09-16T06:53:50Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-09-13T065046Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-09-13T065046Z.json
+- Latest archived report path: reports/2026-09-16T065350Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-09-16T065350Z.json
 - Candidate count after merge: 308
 - Detailed repo count: 307
 - LLM provider: deepseek
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - ayghri/i-have-adhd (https://github.com/ayghri/i-have-adhd) score=9066
-  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=5093
-  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=4082
+  - bilawalsidhu/gods-eye-view (https://github.com/bilawalsidhu/gods-eye-view) score=6722
+  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=5279
+  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=4795
 - Warnings:
   - none
 - Next run notes:

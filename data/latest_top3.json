@@ -1,53 +1,58 @@
 {
-  "run_at": "2026-09-13T06:50:46Z",
+  "run_at": "2026-09-16T06:53:50Z",
   "baseline": false,
   "repos": [
     {
-      "full_name": "ayghri/i-have-adhd",
-      "html_url": "https://github.com/ayghri/i-have-adhd",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "homepage": "",
-      "language": "Python",
+      "full_name": "bilawalsidhu/gods-eye-view",
+      "html_url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "homepage": "https://maptheworld.ai/",
+      "language": "JavaScript",
       "topics": [
-        "adhd",
-        "claude-",
-        "claude-code-plugin",
-        "claude-skills",
-        "developer-tools",
-        "productivity"
+        "3d-globe",
+        "cesium",
+        "flight-tracking",
+        "geospatial",
+        "geospatial-intelligence",
+        "gis",
+        "osint",
+        "photogrammetry",
+        "satellite-tracking",
+        "spatial-intelligence",
+        "webgl",
+        "worldview"
       ],
-      "stars": 43629,
-      "forks": 2489,
-      "subscribers": 147,
-      "open_issues": 64,
-      "created_at": "2026-05-13T20:42:06Z",
-      "updated_at": "2026-09-13T06:50:42Z",
-      "pushed_at": "2026-09-10T15:48:41Z",
+      "stars": 35108,
+      "forks": 7016,
+      "subscribers": 662,
+      "open_issues": 168,
+      "created_at": "2026-06-22T23:37:22Z",
+      "updated_at": "2026-09-16T06:53:54Z",
+      "pushed_at": "2026-09-16T03:31:53Z",
       "archived": false,
       "disabled": false,
       "fork": false,
-      "license": "MIT",
+      "license": "NOASSERTION",
       "sources": [
-        "trending:weekly",
-        "search:topic:developer-tools stars:>50 pushed:>2026-08-14"
+        "trending:weekly"
       ],
-      "readme_summary": "<p align=\"center\"> <img src=\"./logo.png\" alt=\"i-have-adhd\" width=\"140\" /> </p> <p align=\"center\"> <strong align=\"center\">ADHD-friendly outputs. No ADHD diagnosis needed!</strong> </p> <p align=\"center\"> <a href=\"LICENSE\"><img src=\"https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat\" alt=\"License\"></a> </p> <p align=\"center\"> <strong title=\"English\" aria-label=\"English\">🇬🇧</strong> · <a href=\".github/readme/README.zh-CN.md\" title=\"简体中文\" aria-label=\"简体中文\">🇨🇳</a> · <a href=\".github/readme/README.pt-BR.md\" title=\"Português (Brasil)\" aria-label=\"Português (Brasil)\">🇧🇷</a> · <a href=\".github/readme/README.ja.md\" title=\"日本語\" aria-label=\"日本語\">🇯🇵</a> · <a href=\".github/readme/README.…",
-      "readme_length": 3328,
-      "delta_stars": 8073,
-      "delta_subscribers": 24,
-      "delta_forks": 420,
+      "readme_summary": "<div align=\"center\"> # 🌐 God's Eye View [![CI](https://github.com/bilawalsidhu/gods-eye-view/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bilawalsidhu/gods-eye-view/actions/workflows/ci.yml) ### A spy-satellite simulator in your browser — then you realize the sources are public and the data is real. Photorealistic 3D globe. Live aircraft, ships, satellites, earthquakes, traffic, and public cameras. Hands-free voice control powered by a realtime AI agent. _No place left behind._ ![Orbital HUD, a tracked live globe, FLIR terrain — then OPEN SOURCED](docs/media/hero-open-source-reveal.gif) <a href=\"https://www.youtube.com/@bilawalsidhu\"> <img src=\"docs/media/youtube-popu…",
+      "readme_length": 12000,
+      "delta_stars": 4626,
+      "delta_subscribers": 55,
+      "delta_forks": 893,
       "score_parts": {
-        "delta_stars": 8073,
-        "delta_subscribers_weighted": 120,
-        "delta_forks_weighted": 840,
+        "delta_stars": 4626,
+        "delta_subscribers_weighted": 275,
+        "delta_forks_weighted": 1786,
         "recent_push_bonus": 20,
-        "readme_bonus": 8,
-        "topic_bonus": 5,
+        "readme_bonus": 15,
+        "topic_bonus": 0,
         "awesome_penalty": 0,
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 9066
+      "trend_score": 6722
     },
     {
       "full_name": "deepseek-ai/deepseek-harness",
@@ -61,29 +66,29 @@
         "dsh",
         "dsh-plugin"
       ],
-      "stars": 221863,
-      "forks": 26317,
-      "subscribers": 943,
+      "stars": 225810,
+      "forks": 26899,
+      "subscribers": 971,
       "open_issues": 0,
       "created_at": "2026-08-13T11:56:32Z",
-      "updated_at": "2026-09-13T06:51:02Z",
-      "pushed_at": "2026-09-11T03:06:25Z",
+      "updated_at": "2026-09-16T06:53:52Z",
+      "pushed_at": "2026-09-15T04:51:11Z",
       "archived": false,
       "disabled": false,
       "fork": false,
       "license": "MIT",
       "sources": [
-        "search:pushed:>2026-08-30 stars:>200"
+        "search:pushed:>2026-09-02 stars:>200"
       ],
       "readme_summary": "# DeepSeek Harness English | [中文](README.zh.md) DeepSeek Harness (`dsh`) is an open-source agent harness developed by [DeepSeek AI](https://deepseek.com). It is built on an **everything-is-a-plugin** architecture and powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://arxiv.org/abs/2608.25512). Documentation: [https://deepseek-harness.github.io/deepseek-harness/](https://deepseek-harness.github.io/deepseek-harness/) ## Developer preview DeepSeek Harness is in _developer preview_ and iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.** Review the [safety notice](SAFETY.md)…",
       "readme_length": 2440,
-      "delta_stars": 3929,
-      "delta_subscribers": 16,
-      "delta_forks": 528,
+      "delta_stars": 3947,
+      "delta_subscribers": 28,
+      "delta_forks": 582,
       "score_parts": {
-        "delta_stars": 3929,
-        "delta_subscribers_weighted": 80,
-        "delta_forks_weighted": 1056,
+        "delta_stars": 3947,
+        "delta_subscribers_weighted": 140,
+        "delta_forks_weighted": 1164,
         "recent_push_bonus": 20,
         "readme_bonus": 8,
         "topic_bonus": 0,
@@ -91,7 +96,7 @@
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 5093
+      "trend_score": 5279
     },
     {
       "full_name": "tt-a1i/archify",
@@ -121,30 +126,30 @@
         "system-design",
         "text-to-diagram"
       ],
-      "stars": 59972,
-      "forks": 3923,
-      "subscribers": 174,
-      "open_issues": 160,
+      "stars": 63990,
+      "forks": 4244,
+      "subscribers": 193,
+      "open_issues": 176,
       "created_at": "2026-04-15T05:27:37Z",
-      "updated_at": "2026-09-13T06:49:25Z",
-      "pushed_at": "2026-09-13T03:49:47Z",
+      "updated_at": "2026-09-16T06:53:45Z",
+      "pushed_at": "2026-09-16T05:44:57Z",
       "archived": false,
       "disabled": false,
       "fork": false,
       "license": "MIT",
       "sources": [
         "trending:weekly",
-        "search:topic:developer-tools stars:>50 pushed:>2026-08-14"
+        "search:topic:developer-tools stars:>50 pushed:>2026-08-17"
       ],
       "readme_summary": "<p align=\"center\"> <strong>English</strong> · <a href=\"./README_ZH.md\">简体中文</a> </p> <p align=\"center\"> <a href=\"https://trendshift.io/repositories/31352?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-31352\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/31352\" alt=\"Archify on Trendshift\" width=\"250\" height=\"55\"/></a> </p> ![Archify product preview](docs/assets/archify-readme-hero.png) # Archify **Turn a codebase or system description into a polished, interactive system map — directly in chat.** Archify is a Node.js rendering and validation system for Cursor, Claude Code, Codex CLI, and OpenCode. Agents pr…",
       "readme_length": 12000,
-      "delta_stars": 3535,
-      "delta_subscribers": 5,
-      "delta_forks": 241,
+      "delta_stars": 4018,
+      "delta_subscribers": 19,
+      "delta_forks": 321,
       "score_parts": {
-        "delta_stars": 3535,
-        "delta_subscribers_weighted": 25,
-        "delta_forks_weighted": 482,
+        "delta_stars": 4018,
+        "delta_subscribers_weighted": 95,
+        "delta_forks_weighted": 642,
         "recent_push_bonus": 20,
         "readme_bonus": 15,
         "topic_bonus": 5,
@@ -152,7 +157,7 @@
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 4082
+      "trend_score": 4795
     }
   ]
 }

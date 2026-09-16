@@ -514,3 +514,20 @@
 - tt-a1i/archify | score=4082 | https://github.com/tt-a1i/archify
 - Warnings:
 - warning: none
+
+## 2026-09-16T06:53:50Z
+
+- Candidate count after merge: 308
+- Detailed repo count: 307
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-16T065350Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-16T065350Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- bilawalsidhu/gods-eye-view | score=6722 | https://github.com/bilawalsidhu/gods-eye-view
+- deepseek-ai/deepseek-harness | score=5279 | https://github.com/deepseek-ai/deepseek-harness
+- tt-a1i/archify | score=4795 | https://github.com/tt-a1i/archify
+- Warnings:
+- warning: none
