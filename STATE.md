@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-09-16T06:53:50Z
+- Last run: 2026-09-19T06:44:40Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-09-16T065350Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-09-16T065350Z.json
-- Candidate count after merge: 308
-- Detailed repo count: 307
+- Latest archived report path: reports/2026-09-19T064440Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-09-19T064440Z.json
+- Candidate count after merge: 311
+- Detailed repo count: 310
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - bilawalsidhu/gods-eye-view (https://github.com/bilawalsidhu/gods-eye-view) score=6722
-  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=5279
-  - tt-a1i/archify (https://github.com/tt-a1i/archify) score=4795
+  - alibaba/open-code-review (https://github.com/alibaba/open-code-review) score=8736
+  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=4765
+  - bilawalsidhu/gods-eye-view (https://github.com/bilawalsidhu/gods-eye-view) score=4614
 - Warnings:
   - none
 - Next run notes:
