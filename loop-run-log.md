@@ -548,3 +548,20 @@
 - bilawalsidhu/gods-eye-view | score=4614 | https://github.com/bilawalsidhu/gods-eye-view
 - Warnings:
 - warning: none
+
+## 2026-09-22T06:54:15Z
+
+- Candidate count after merge: 313
+- Detailed repo count: 313
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-22T065415Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-22T065415Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- browser-use/jev-ultrafast | score=12193 | https://github.com/browser-use/jev-ultrafast
+- eternity4719/HowToLiveBetter | score=7225 | https://github.com/eternity4719/HowToLiveBetter
+- cloudflare/security-audit-skill | score=5738 | https://github.com/cloudflare/security-audit-skill
+- Warnings:
+- warning: none
