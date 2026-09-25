@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-09-22T06:54:15Z
+- Last run: 2026-09-25T06:44:54Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-09-22T065415Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-09-22T065415Z.json
-- Candidate count after merge: 313
-- Detailed repo count: 313
+- Latest archived report path: reports/2026-09-25T064454Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-09-25T064454Z.json
+- Candidate count after merge: 310
+- Detailed repo count: 310
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - browser-use/jev-ultrafast (https://github.com/browser-use/jev-ultrafast) score=12193
-  - eternity4719/HowToLiveBetter (https://github.com/eternity4719/HowToLiveBetter) score=7225
-  - cloudflare/security-audit-skill (https://github.com/cloudflare/security-audit-skill) score=5738
+  - NandhaKishorM/laya (https://github.com/NandhaKishorM/laya) score=13502
+  - jaredpalmer/kev (https://github.com/jaredpalmer/kev) score=4689
+  - browser-use/jev-ultrafast (https://github.com/browser-use/jev-ultrafast) score=3858
 - Warnings:
   - none
 - Next run notes:

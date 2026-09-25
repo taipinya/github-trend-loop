@@ -565,3 +565,20 @@
 - cloudflare/security-audit-skill | score=5738 | https://github.com/cloudflare/security-audit-skill
 - Warnings:
 - warning: none
+
+## 2026-09-25T06:44:54Z
+
+- Candidate count after merge: 310
+- Detailed repo count: 310
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-25T064454Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-25T064454Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- NandhaKishorM/laya | score=13502 | https://github.com/NandhaKishorM/laya
+- jaredpalmer/kev | score=4689 | https://github.com/jaredpalmer/kev
+- browser-use/jev-ultrafast | score=3858 | https://github.com/browser-use/jev-ultrafast
+- Warnings:
+- warning: none
