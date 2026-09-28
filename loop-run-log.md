@@ -582,3 +582,20 @@
 - browser-use/jev-ultrafast | score=3858 | https://github.com/browser-use/jev-ultrafast
 - Warnings:
 - warning: none
+
+## 2026-09-28T07:48:49Z
+
+- Candidate count after merge: 304
+- Detailed repo count: 304
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-09-28T074849Z-github-trends.md
+- Snapshot path: data/snapshots/2026-09-28T074849Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- vectorize-io/hindsight | score=15145 | https://github.com/vectorize-io/hindsight
+- eternity4719/HowToLiveBetter | score=9415 | https://github.com/eternity4719/HowToLiveBetter
+- NandhaKishorM/laya | score=4333 | https://github.com/NandhaKishorM/laya
+- Warnings:
+- warning: none
