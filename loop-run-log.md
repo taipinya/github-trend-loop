@@ -599,3 +599,20 @@
 - NandhaKishorM/laya | score=4333 | https://github.com/NandhaKishorM/laya
 - Warnings:
 - warning: none
+
+## 2026-10-01T07:52:45Z
+
+- Candidate count after merge: 308
+- Detailed repo count: 308
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-01T075245Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-01T075245Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- eternity4719/HowToLiveBetter | score=11732 | https://github.com/eternity4719/HowToLiveBetter
+- debpalash/VoiceStudio | score=11586 | https://github.com/debpalash/VoiceStudio
+- vectorize-io/hindsight | score=7042 | https://github.com/vectorize-io/hindsight
+- Warnings:
+- warning: none
