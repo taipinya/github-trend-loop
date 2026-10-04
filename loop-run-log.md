@@ -616,3 +616,20 @@
 - vectorize-io/hindsight | score=7042 | https://github.com/vectorize-io/hindsight
 - Warnings:
 - warning: none
+
+## 2026-10-04T07:30:12Z
+
+- Candidate count after merge: 307
+- Detailed repo count: 306
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-04T073012Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-04T073012Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- eternity4719/HowToLiveBetter | score=6908 | https://github.com/eternity4719/HowToLiveBetter
+- Niko1221/Strata | score=6654 | https://github.com/Niko1221/Strata
+- DietrichGebert/ponytail | score=4850 | https://github.com/DietrichGebert/ponytail
+- Warnings:
+- warning: none
