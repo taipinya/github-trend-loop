@@ -633,3 +633,20 @@
 - DietrichGebert/ponytail | score=4850 | https://github.com/DietrichGebert/ponytail
 - Warnings:
 - warning: none
+
+## 2026-10-07T07:46:23Z
+
+- Candidate count after merge: 299
+- Detailed repo count: 298
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-07T074623Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-07T074623Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- Niko1221/Strata | score=8669 | https://github.com/Niko1221/Strata
+- boykopovar/AnyPS5 | score=4578 | https://github.com/boykopovar/AnyPS5
+- DietrichGebert/ponytail | score=3611 | https://github.com/DietrichGebert/ponytail
+- Warnings:
+- warning: none

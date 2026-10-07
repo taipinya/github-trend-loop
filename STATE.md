@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-10-04T07:30:12Z
+- Last run: 2026-10-07T07:46:23Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-10-04T073012Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-10-04T073012Z.json
-- Candidate count after merge: 307
-- Detailed repo count: 306
+- Latest archived report path: reports/2026-10-07T074623Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-10-07T074623Z.json
+- Candidate count after merge: 299
+- Detailed repo count: 298
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - eternity4719/HowToLiveBetter (https://github.com/eternity4719/HowToLiveBetter) score=6908
-  - Niko1221/Strata (https://github.com/Niko1221/Strata) score=6654
-  - DietrichGebert/ponytail (https://github.com/DietrichGebert/ponytail) score=4850
+  - Niko1221/Strata (https://github.com/Niko1221/Strata) score=8669
+  - boykopovar/AnyPS5 (https://github.com/boykopovar/AnyPS5) score=4578
+  - DietrichGebert/ponytail (https://github.com/DietrichGebert/ponytail) score=3611
 - Warnings:
   - none
 - Next run notes:
