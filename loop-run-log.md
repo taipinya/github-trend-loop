@@ -650,3 +650,20 @@
 - DietrichGebert/ponytail | score=3611 | https://github.com/DietrichGebert/ponytail
 - Warnings:
 - warning: none
+
+## 2026-10-10T07:47:35Z
+
+- Candidate count after merge: 298
+- Detailed repo count: 297
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-10T074735Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-10T074735Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=64104 | https://github.com/morluto/rea
+- storytold/photocraft | score=35673 | https://github.com/storytold/photocraft
+- boykopovar/AnyPS5 | score=19915 | https://github.com/boykopovar/AnyPS5
+- Warnings:
+- warning: none
