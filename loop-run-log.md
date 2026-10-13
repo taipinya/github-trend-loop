@@ -667,3 +667,20 @@
 - boykopovar/AnyPS5 | score=19915 | https://github.com/boykopovar/AnyPS5
 - Warnings:
 - warning: none
+
+## 2026-10-13T08:34:22Z
+
+- Candidate count after merge: 295
+- Detailed repo count: 294
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-13T083422Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-13T083422Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=189838 | https://github.com/morluto/rea
+- storytold/photocraft | score=25729 | https://github.com/storytold/photocraft
+- boykopovar/AnyPS5 | score=12351 | https://github.com/boykopovar/AnyPS5
+- Warnings:
+- warning: none
