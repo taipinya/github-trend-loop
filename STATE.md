@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-10-16T06:28:33Z
+- Last run: 2026-10-19T07:00:56Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-10-16T062833Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-10-16T062833Z.json
-- Candidate count after merge: 297
-- Detailed repo count: 297
+- Latest archived report path: reports/2026-10-19T070056Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-10-19T070056Z.json
+- Candidate count after merge: 299
+- Detailed repo count: 299
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=154118
-  - storytold/photocraft (https://github.com/storytold/photocraft) score=12773
-  - wheresryan22/anatomy (https://github.com/wheresryan22/anatomy) score=7188
+  - morluto/rea (https://github.com/morluto/rea) score=77093
+  - debpalash/VoiceStudio (https://github.com/debpalash/VoiceStudio) score=8077
+  - Ebony-Vinyl/dsh-our-free-model (https://github.com/Ebony-Vinyl/dsh-our-free-model) score=7897
 - Warnings:
   - none
 - Next run notes:

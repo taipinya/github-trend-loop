@@ -701,3 +701,20 @@
 - wheresryan22/anatomy | score=7188 | https://github.com/wheresryan22/anatomy
 - Warnings:
 - warning: none
+
+## 2026-10-19T07:00:56Z
+
+- Candidate count after merge: 299
+- Detailed repo count: 299
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-19T070056Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-19T070056Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=77093 | https://github.com/morluto/rea
+- debpalash/VoiceStudio | score=8077 | https://github.com/debpalash/VoiceStudio
+- Ebony-Vinyl/dsh-our-free-model | score=7897 | https://github.com/Ebony-Vinyl/dsh-our-free-model
+- Warnings:
+- warning: none
