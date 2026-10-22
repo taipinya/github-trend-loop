@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-10-19T07:00:56Z
+- Last run: 2026-10-22T06:42:07Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-10-19T070056Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-10-19T070056Z.json
-- Candidate count after merge: 299
-- Detailed repo count: 299
+- Latest archived report path: reports/2026-10-22T064207Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-10-22T064207Z.json
+- Candidate count after merge: 298
+- Detailed repo count: 297
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,11 +15,11 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=77093
-  - debpalash/VoiceStudio (https://github.com/debpalash/VoiceStudio) score=8077
-  - Ebony-Vinyl/dsh-our-free-model (https://github.com/Ebony-Vinyl/dsh-our-free-model) score=7897
+  - morluto/rea (https://github.com/morluto/rea) score=48945
+  - google-research/harness2 (https://github.com/google-research/harness2) score=11352
+  - Ebony-Vinyl/dsh-our-free-model (https://github.com/Ebony-Vinyl/dsh-our-free-model) score=10012
 - Warnings:
-  - none
+  - Repo detail failed [surrealdb/surrealdb]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 - Next run notes:
   - Keep `data/latest_snapshot.json` if you want the next run to compute 3-day deltas.
   - Keep `data/snapshots/` and timestamped `reports/` files for historical traceability.

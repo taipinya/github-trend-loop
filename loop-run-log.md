@@ -718,3 +718,20 @@
 - Ebony-Vinyl/dsh-our-free-model | score=7897 | https://github.com/Ebony-Vinyl/dsh-our-free-model
 - Warnings:
 - warning: none
+
+## 2026-10-22T06:42:07Z
+
+- Candidate count after merge: 298
+- Detailed repo count: 297
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-22T064207Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-22T064207Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=48945 | https://github.com/morluto/rea
+- google-research/harness2 | score=11352 | https://github.com/google-research/harness2
+- Ebony-Vinyl/dsh-our-free-model | score=10012 | https://github.com/Ebony-Vinyl/dsh-our-free-model
+- Warnings:
+- warning: Repo detail failed [surrealdb/surrealdb]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
