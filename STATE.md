@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-10-22T06:42:07Z
+- Last run: 2026-10-25T07:01:33Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-10-22T064207Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-10-22T064207Z.json
-- Candidate count after merge: 298
-- Detailed repo count: 297
+- Latest archived report path: reports/2026-10-25T070133Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-10-25T070133Z.json
+- Candidate count after merge: 302
+- Detailed repo count: 302
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,11 +15,11 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=48945
-  - google-research/harness2 (https://github.com/google-research/harness2) score=11352
-  - Ebony-Vinyl/dsh-our-free-model (https://github.com/Ebony-Vinyl/dsh-our-free-model) score=10012
+  - morluto/rea (https://github.com/morluto/rea) score=29780
+  - Gathin23/cleanyourtv (https://github.com/Gathin23/cleanyourtv) score=15207
+  - cloudflare/security-audit-skill (https://github.com/cloudflare/security-audit-skill) score=8993
 - Warnings:
-  - Repo detail failed [surrealdb/surrealdb]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+  - none
 - Next run notes:
   - Keep `data/latest_snapshot.json` if you want the next run to compute 3-day deltas.
   - Keep `data/snapshots/` and timestamped `reports/` files for historical traceability.

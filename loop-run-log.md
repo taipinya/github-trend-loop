@@ -735,3 +735,20 @@
 - Ebony-Vinyl/dsh-our-free-model | score=10012 | https://github.com/Ebony-Vinyl/dsh-our-free-model
 - Warnings:
 - warning: Repo detail failed [surrealdb/surrealdb]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+## 2026-10-25T07:01:33Z
+
+- Candidate count after merge: 302
+- Detailed repo count: 302
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-25T070133Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-25T070133Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=29780 | https://github.com/morluto/rea
+- Gathin23/cleanyourtv | score=15207 | https://github.com/Gathin23/cleanyourtv
+- cloudflare/security-audit-skill | score=8993 | https://github.com/cloudflare/security-audit-skill
+- Warnings:
+- warning: none
