@@ -752,3 +752,20 @@
 - cloudflare/security-audit-skill | score=8993 | https://github.com/cloudflare/security-audit-skill
 - Warnings:
 - warning: none
+
+## 2026-10-28T07:34:59Z
+
+- Candidate count after merge: 301
+- Detailed repo count: 301
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-28T073459Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-28T073459Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=29711 | https://github.com/morluto/rea
+- Gathin23/cleanyourtv | score=12786 | https://github.com/Gathin23/cleanyourtv
+- Nutlope/hallmark | score=7873 | https://github.com/Nutlope/hallmark
+- Warnings:
+- warning: none

@@ -1,18 +1,14 @@
 # GitHub 趋势项目观察
 
-本次榜单的三个项目分别落在“AI Agent 驱动的逆向工程”“消费级 Android TV 去广告与桌面替换”“编码 Agent 的安全审计技能”三个方向。它们共同的特征是：把 Agent/LLM 能力嵌入到原本需要专家手工完成的工程流程中，并通过 CLI、技能包、脚本化流程降低使用门槛。需要注意，本次为 baseline 运行，没有 3 天增量数据，下一次运行才会有 delta 对比；下文所有 stars/forks 变化只能作为单点快照理解。
-
 ## 本次结论
 
-- 三个项目都不是“模型训练框架”，而是把 Agent 能力工程化、产品化的工具层项目，适合观察“Agent 如何被封装成可复用技能/工具”的业界做法。
-- `morluto/rea` 和 `cloudflare/security-audit-skill` 都涉及“多阶段、可验证”的 Agent 工作流，是理解 Agent 编排与结果校验的好样本。
-- `Gathin23/cleanyourtv` 更偏消费级工具，但它的 ADB 远程操作、去臃肿、桌面替换思路，对做移动端/嵌入式课程设计很有参考价值。
+本次 Top 3 呈现出三个不同方向的“AI 增强型开发者工具”趋势：一是用 agent 把逆向工程从人工经验变成可编排的分析流程（rea）；二是用脚本化 ADB 操作解决消费电子设备的隐私与体验问题（cleanyourtv）；三是把“设计审美”本身做成可被编码代理调用的技能约束（hallmark）。三者共同点是：都在把原本依赖专家直觉的工作，拆解成可复用、可检查的规则或工具链。
 
 ## 报告重点
 
-- 关注 Agent 技能（skill）的封装方式：如何把领域知识、工具调用、验证步骤组织成可复用的流程。
-- 关注“机器可读输出 + 独立验证”这一模式，它在逆向工程和安全审计中都被强调。
-- 关注消费级工具如何用最小侵入方式（不 root、可恢复）完成系统级改造。
+- rea：关注 agent 如何与 Ghidra/Hopper 等二进制分析工具通过 MCP 协作，属于“AI + 安全分析”方向。
+- cleanyourtv：关注无 root、可回滚的设备改造思路，属于“脚本化系统运维 + 隐私”方向。
+- hallmark：关注把设计规范做成 LLM 可调用的 skill，属于“AI 生成内容质量控制”方向。
 
 ## Top 3 项目
 
@@ -20,106 +16,103 @@
 - URL：https://github.com/morluto/rea
 
 #### 项目简介
-这是一个面向逆向工程领域的 Agent 工具项目，用 TypeScript 编写。从描述和 topic 看，它试图让 AI Agent 完成从应用行为分析到原生二进制分析的任务，涉及静态分析、反编译（Ghidra、Hopper 等工具）、MCP（Model Context Protocol）以及 CLI 交互。它属于“AI Agent + 逆向工程工具链”的交叉领域，可能通过把反汇编/反编译工具封装成 Agent 可调用的能力，再由 LLM 规划分析步骤来完成任务。
+
+rea 是一个面向逆向工程（reverse engineering）的 agent 工具项目，描述为“用 agent 逆向任何东西，从应用行为到原生二进制”。从语言（TypeScript）和 topics 看，它可能是一个 CLI 或插件形态的编排层，把 LLM agent 与 Ghidra、Hopper 等反汇编/反编译工具通过 MCP（Model Context Protocol）连接起来，让 agent 能调用静态分析能力完成二进制分析任务。它属于“AI 辅助安全分析 / 二进制逆向”领域。
 
 #### 为什么值得关注
-- stars 数量极高（380049），forks 也很大（95003），说明它在 Agent 工具类项目中关注度非常突出；但需要注意这是单点快照，本次没有 3 天增量数据，下一次运行才有 delta。
-- topic 覆盖非常广：agent-skills、ai-agents、binary-analysis、decompiler、ghidra、hopper、mcp、model-context-protocol、static-analysis 等，能看出它把“Agent 技能”“逆向工具”“协议接入”三者结合。
-- README 提供多语言版本（英、简中、繁中、日、韩等），说明项目有较强的国际化维护意愿，文档结构可能比较完整。
-- 最近 push 时间较新，open issues 数量较多（1041），说明项目活跃但问题积压也需要留意。
+
+stars 约 39.9 万、forks 约 10 万，delta_stars 约 1.88 万，说明近期热度很高；subscribers 约 1503，open issues 约 1383，反映社区参与度高但维护压力也不小。topics 覆盖 agent-skills、binary-analysis、decompiler、ghidra、hopper、mcp、static-analysis，README 提供多达近 20 种语言版本，说明项目有较强的国际化文档意识。最近 push 在 2026-10-28，属于活跃维护状态。从 README 结构看，它更像一个“agent 技能 + 工具桥接”的平台型项目，而不是单一脚本。
 
 #### README 摘要
-中文说明：README 以多语言入口开头，主体应包含项目定位、功能说明、使用方式、工具/插件集成说明等结构。从摘要线索看，它强调“用 Agent 逆向任何东西”，并列出多种语言文档链接，说明文档体系较完整，可能还包含 CLI 用法、MCP 配置、插件（dsh-plugin）等内容。
 
-摘要线索：README 开头为多语言导航（English、简体中文、繁體中文、日本語、한국어 等），并带有项目 banner 图；描述强调 “Reverse engineer anything with agents, from app behavior down to native binaries.”。
+中文说明：README 开头是多语言切换区（English、简体中文、繁体中文、日语、韩语、土耳其语、俄语、越南语、泰语、德语、西班牙语、法语、乌克兰语、波兰语、葡萄牙语、阿拉伯语、波斯语、印尼语、意大利语等），说明文档面向全球开发者。摘要线索显示项目强调“用 agent 做逆向”，并列出 agent-skills、MCP、Ghidra、Hopper、decompiler 等关键词，推测 README 主体会介绍 agent 如何接入逆向工具、支持哪些分析场景、以及 CLI/插件的基本用法。
 
 #### 具体怎么用
-可以从几个模块入手理解：一是 Agent 技能/插件层（agent-skills、dsh-plugin），看它如何把逆向任务拆成可调用步骤；二是工具集成层（ghidra、hopper、decompiler），看它如何封装外部逆向工具；三是 MCP 协议层，理解 Agent 与工具之间的通信方式；四是 CLI 入口，观察一次分析任务的数据流如何从输入二进制到输出报告。建议先读 README 的架构说明和示例，再对照源码中的 agent 编排逻辑。
+
+可以从三条线入手理解：第一，看 agent-skills 与 MCP 相关目录，理解 agent 如何被赋予“调用反编译工具”的能力；第二，看与 Ghidra/Hopper 的集成层，理解工具调用协议和数据流（二进制输入 → 反汇编 → agent 推理 → 输出报告）；第三，看 CLI 入口和插件机制（dsh-plugin 等 topic 暗示存在插件体系），理解整个编排流程。不建议一上来就跑完整逆向，先读架构和工具适配层更有收获。
 
 #### 适合谁关注
-适合对 AI Agent 编排、逆向工程自动化、MCP 协议感兴趣的学生和个人开发者；也适合想做“Agent + 专业工具链”课程设计或实验项目的研究型工程实践者。
+
+适合对二进制安全、逆向工程、LLM agent 编排感兴趣的高年级本科生和研究生；也适合想做“AI 辅助安全分析”课程设计或个人项目的开发者。对希望理解 MCP 协议在真实工具链中如何落地的人尤其有参考价值。
 
 #### 应用场景示例
-- 恶意样本分析辅助：让 Agent 先做静态特征提取，再调用反编译工具生成伪代码，最后由人复核可疑函数。
-- 软件供应链安全审查：对第三方二进制依赖做行为与符号分析，辅助判断是否存在异常逻辑。
-- CTF/逆向教学：把逆向分析步骤拆解成 Agent 可执行流程，用于教学演示和练习辅助。
-- 遗留系统迁移评估：分析旧二进制程序的调用关系，辅助评估重写或封装成本。
+
+- 恶意样本初步分析：安全团队用 agent 自动提取二进制中的字符串、导入表、可疑 API 调用，生成初筛报告供人工复核。
+- 遗留系统迁移评估：在缺少源码的情况下，用 agent 辅助理解原生二进制的模块结构和依赖关系。
+- CTF 与教学实验：把逆向题目交给 agent 做辅助分析，观察其推理路径，用于教学演示。
+- 软件供应链审查：对第三方二进制组件做静态特征提取，辅助判断是否存在异常行为。
 
 #### 风险或局限
-- stars 与 forks 数值异常高，需警惕数据口径或统计方式带来的偏差；本次无 delta 数据，趋势判断有限。
-- open issues 较多，可能存在功能不稳定或文档与实现不一致的问题。
-- 依赖 Ghidra、Hopper 等外部工具，环境配置和许可证成本需要自行评估。
-- Agent 自动分析结果需要人工复核，不能直接作为安全结论。
+
+stars 和 forks 数值异常巨大，需警惕数据本身可能存在统计口径问题；open issues 数量较多，说明项目迭代快但稳定性未必有保障。逆向工程涉及法律与授权边界，使用场景需自行评估合规性。项目依赖 Ghidra/Hopper 等外部工具，环境配置成本可能较高。README 摘要信息有限，具体能力边界需要进一步阅读文档确认。
 
 ### 2. Gathin23/cleanyourtv
 - URL：https://github.com/Gathin23/cleanyourtv
 
 #### 项目简介
-这是一个面向 Android TV / Google TV 的消费级工具，用 Java 编写。它通过 Wi-Fi 上的 ADB 连接电视，实现去臃肿（debloat）、替换广告较多的默认桌面为类 Apple TV 风格的干净启动器，并支持一键恢复。从 topic 看，涉及 adb、android-tv、launcher、bloatware-removal、privacy 等，属于“智能电视系统定制与隐私清理”方向。
+
+cleanyourtv 是一个用 Python 编写的工具，目标是通过 Wi-Fi 对 Android TV / Google TV 设备进行“去膨胀”（debloat），移除预装广告类应用，并替换成类似 Apple TV 风格的干净启动器。从 topics 看，它基于 ADB 协议远程操作设备，强调 no root、不卸载、可一行命令恢复，属于“消费电子设备脚本化运维 + 隐私增强”方向。
 
 #### 为什么值得关注
-- stars 32567、forks 3805，关注度较高；同样本次为 baseline，没有 3 天增量数据，下一次运行才有 delta。
-- topic 中包含 claude-code、vibe-coding，说明项目可能与 AI 辅助编码有关，或作者在开发中使用了这类工具，值得观察“AI 辅助开发”在消费级项目中的实践。
-- README 强调“No root, no cable, nothing uninstalled, and a one-line restore”，这种最小侵入、可恢复的设计思路对做系统工具类项目很有启发。
-- 覆盖多个电视品牌（Sony Bravia、TCL、Xiaomi 等），说明它试图做通用化适配。
+
+stars 约 4.2 万、forks 约 5170，delta_stars 约 9911，说明近期增长明显；subscribers 仅 111，open issues 约 183，社区讨论活跃但核心维护者可能较少。topics 覆盖 adb、android-tv、bloatware-removal、privacy、launcher、fire-tv、google-tv 等，定位非常具体。最近 push 在 2026-10-28，处于活跃状态。README 摘要显示项目有官网、banner 图和多语言版本（简体中文、繁体中文、越南语、日语、意大利语、荷兰语），说明作者重视可读性和传播。
 
 #### README 摘要
-中文说明：README 以 banner 图和项目口号开头，强调“Your TV, minus the ads.”，主体应包含功能说明、支持设备、使用前提（Wi-Fi ADB）、去臃肿与启动器替换流程、恢复方式等。从摘要看，它突出无需 root、无需线缆、不卸载应用、可一键恢复。
 
-摘要线索：README 开头为居中的 banner 图片和项目描述，包含 stars/pulls 徽章；描述强调 “Strip the bloatware from any Android TV or Google TV over Wi-Fi and replace the ad-filled home screen with a clean launcher that looks like an Apple TV.”。
+中文说明：README 以 banner 图开头，强调“Your TV, minus the ads”，核心卖点是无需 root、无需线缆、不卸载任何东西、支持一行命令恢复。随后是多语言阅读入口。摘要线索显示 README 会介绍支持哪些电视品牌（Sony Bravia、TCL、小米、Fire TV 等）、如何通过 Wi-Fi 连接 ADB、如何替换启动器，以及恢复流程。
 
 #### 具体怎么用
-可以从几个层面理解：一是 ADB 连接层，看它如何通过 Wi-Fi 发现并连接电视；二是去臃肿逻辑，看它如何禁用而非卸载预装应用；三是启动器替换机制，理解 Android TV 的 launcher 切换方式；四是恢复流程，看它如何保存原始状态并支持回滚。建议先读 README 的支持设备列表和操作前提，再对照源码中的 ADB 命令封装和状态管理逻辑。
+
+可以从三个层面理解：第一，看 ADB 连接与设备发现模块，理解如何通过 Wi-Fi 建立调试通道；第二，看“去膨胀”清单的维护方式——它大概率是一个可配置的应用包名列表，理解其如何区分“可禁用”与“不可动”的系统组件；第三，看启动器替换与恢复逻辑，理解“不卸载、可回滚”的工程设计。重点不是照着跑，而是学习它如何把设备改造做成可逆操作。
 
 #### 适合谁关注
-适合对 Android 系统定制、ADB 自动化、智能电视/嵌入式设备感兴趣的学生和个人开发者；也适合想做“设备管理工具”类课程设计的人。
+
+适合对 Android 系统、ADB 调试、智能电视生态感兴趣的学生和個人开发者；也适合想做“家庭设备隐私加固”小工具的人。对学习“如何设计可回滚的系统级脚本”有启发。
 
 #### 应用场景示例
-- 家庭电视隐私清理：关闭预装广告与数据采集服务，替换为简洁桌面，提升使用体验。
-- 小型门店展示屏管理：批量对多台 Android TV 做统一去臃肿和桌面标准化。
-- 酒店/民宿电视维护：在不 root 的前提下快速恢复干净系统状态，降低维护成本。
-- 教学实验：用 ADB 远程控制设备，理解 Android 应用管理与 launcher 机制。
+
+- 家庭电视隐私加固：移除智能电视中收集观看数据的预装应用，减少广告追踪。
+- 小型办公场所电视改造：统一多台电视的启动器与预装应用，降低维护复杂度。
+- 酒店/民宿电视标准化：批量配置电视界面，提升住客体验并减少广告干扰。
+- 二手设备翻新：在转售前清理前用户残留的预装推广应用。
 
 #### 风险或局限
-- 许可证为 NOASSERTION，使用前需自行确认授权条款。
-- 不同品牌电视的 ADB 行为和预装应用差异较大，通用性可能有限。
-- 禁用系统应用可能影响部分功能，虽然有恢复机制，但仍需谨慎操作。
-- 项目偏消费级工具，生产级批量管理能力需要自行验证。
 
-### 3. cloudflare/security-audit-skill
-- URL：https://github.com/cloudflare/security-audit-skill
+许可证为 NOASSERTION，使用前需自行确认授权条款。ADB 操作涉及设备系统设置，误操作可能导致部分功能异常，尽管项目声称可恢复。不同品牌电视的 ADB 开放程度和系统组件差异较大，兼容性需要逐设备验证。项目依赖 Python 环境和 ADB 工具链，对非技术用户仍有门槛。
+
+### 3. Nutlope/hallmark
+- URL：https://github.com/Nutlope/hallmark
 
 #### 项目简介
-这是 Cloudflare 开源的一个“编码 Agent 技能”，用 JavaScript 编写，用于多阶段安全审计。它把 Agent 编排成安全审计员，流程包括侦察、覆盖导向的漏洞搜寻、候选验证、结构化输出、独立记录验证和目标中立报告。从 README 看，它是 Cloudflare 漏洞发现 harness 的起点版本，属于“AI Agent + 安全审计”方向。
+
+hallmark 是一个“反 AI 味”的设计技能（design skill），面向 Claude Code、Cursor、Codex、OpenCode 等编码代理。它用 CSS 为主要语言，提供约 50 套主题，让代理生成的页面看起来不像机器批量产出。从描述看，它属于“AI 生成内容的质量控制 / 设计规范工程”方向，可能通过 skill 文件、主题目录和浏览器内 lint 规则来实现。
 
 #### 为什么值得关注
-- 由 Cloudflare 官方开源，stars 45205、forks 2806，关注度高；本次为 baseline，没有 3 天增量数据，下一次运行才有 delta。
-- README 明确给出六阶段审计流程，是理解“Agent 如何做结构化安全审计”的很好样本。
-- 强调“independently verified, machine-readable findings”，即结果需要独立验证且机器可读，这对做 Agent 结果可信度研究很有启发。
-- 与 Cloudflare 博客文章关联，说明它有真实的工程背景，但具体生产落地细节需以官方文档为准。
+
+stars 约 3.95 万、forks 约 2063，delta_stars 约 7013，热度较高；subscribers 仅 75，open issues 约 64，说明关注者多但深度参与者相对少。topics 为空，说明项目未打标签，信息组织依赖 README 本身。最近 push 在 2026-10-27，维护活跃。README 摘要提到“fifty themes”“redesign and audit by name”“lints the result in a real browser”，信息密度较高，值得细读。
 
 #### README 摘要
-中文说明：README 结构清晰，开头说明这是一个把编码 Agent 变成安全审计员的技能，随后列出“What it does”，详细描述六个阶段：侦察、覆盖导向搜寻、候选验证、结构化输出、独立记录验证、目标中立报告。还提到它是 Cloudflare 漏洞发现 harness 的种子版本。
 
-摘要线索：README 开头为 “A coding-agent skill that turns your agent into a security auditor.”，并列出六阶段流程；提到 “This is the skill that seeded Cloudflare's vulnerability discovery harness”。
+中文说明：README 以标题和一句话定位开头——“A design skill for Claude Code, Codex, Cursor and OpenCode that refuses to look AI-generated”，并给出官网 usehallmark.com。摘要线索显示它提供 50 套主题、支持按名称重设计或审计，核心机制是“先设定硬性下限，然后放手”，即从主题库中发三套主题，围绕访客目标构建页面，并在真实浏览器中对“机器感”特征做 lint 检查（如每个标题上方的 eyebrow 标签、字距大写标签等）。
 
 #### 具体怎么用
-可以从流程设计入手：先理解六个阶段各自的输入输出，再看它如何组织 Agent 调用与验证步骤；重点关注“候选验证”和“独立记录验证”两个环节，理解它如何降低误报；最后看结构化输出格式，思考如何把审计结果接入 CI 或工单系统。建议对照 README 的阶段说明和源码中的编排逻辑阅读。
+
+可以从三个模块理解：第一，主题目录（themes），看它如何用 CSS 变量或设计 token 定义 50 套风格；第二，skill 描述文件，理解它如何向编码代理传达“禁止哪些设计模式”；第三，浏览器 lint 规则，理解它如何把“AI 味”拆解成可检测的视觉特征。技术路线上，这是把设计评审经验编码成规则集的典型案例，适合研究“如何约束生成式模型的输出风格”。
 
 #### 适合谁关注
-适合对 AI Agent 工作流、安全审计自动化、代码审查工具感兴趣的学生和研究型工程实践者；也适合想做“Agent + 安全”课程设计的人。
+
+适合对前端设计、生成式 AI 输出质量控制、编码代理工作流感兴趣的学生和独立开发者；也适合想做“设计规范即代码”课程实验的人。对研究 prompt/skill 工程化的人有直接参考价值。
 
 #### 应用场景示例
-- 代码仓库安全审查：在合并请求前对变更代码做多阶段审计，输出结构化发现。
-- 依赖与配置检查：对项目依赖和部署配置做侦察与覆盖分析，识别潜在风险点。
-- 内部安全平台集成：把审计结果以机器可读格式接入漏洞管理系统。
-- 教学实验：用六阶段流程讲解安全审计的方法论和 Agent 编排。
+
+- 独立开发者快速建站：用编码代理生成落地页时，通过 hallmark 约束视觉风格，避免千篇一律的 AI 模板感。
+- 设计团队内部规范落地：把品牌设计规则写成 skill，让代理在生成页面时自动遵守。
+- 前端代码审查辅助：用浏览器 lint 检查生成页面的“机器感”特征，作为评审参考。
+- 教学演示：对比有无设计约束时编码代理的输出差异，用于讲解生成质量控制。
 
 #### 风险或局限
-- 项目定位是“技能/起点”，生产级 fleet-wide 系统需要自行扩展，不能直接等同于完整安全平台。
-- 依赖编码 Agent 的能力，审计质量受模型和提示设计影响，需要人工复核。
-- 最近 push 时间相对较早，需关注后续维护节奏。
-- 安全审计结果涉及误报/漏报，不能作为唯一安全结论。
+
+项目以 CSS 为主，实际效果高度依赖所接入的编码代理和浏览器环境，跨工具一致性需要验证。50 套主题的维护成本可能较高，长期质量取决于社区贡献。README 摘要信息有限，lint 规则的具体覆盖范围不明确。作为设计约束工具，它不能替代人工设计判断，过度依赖可能导致风格同质化。
 
 ## 数据限制说明
 

@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-10-25T07:01:33Z
+- Last run: 2026-10-28T07:34:59Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-10-25T070133Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-10-25T070133Z.json
-- Candidate count after merge: 302
-- Detailed repo count: 302
+- Latest archived report path: reports/2026-10-28T073459Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-10-28T073459Z.json
+- Candidate count after merge: 301
+- Detailed repo count: 301
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=29780
-  - Gathin23/cleanyourtv (https://github.com/Gathin23/cleanyourtv) score=15207
-  - cloudflare/security-audit-skill (https://github.com/cloudflare/security-audit-skill) score=8993
+  - morluto/rea (https://github.com/morluto/rea) score=29711
+  - Gathin23/cleanyourtv (https://github.com/Gathin23/cleanyourtv) score=12786
+  - Nutlope/hallmark (https://github.com/Nutlope/hallmark) score=7873
 - Warnings:
   - none
 - Next run notes:
