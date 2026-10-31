@@ -769,3 +769,20 @@
 - Nutlope/hallmark | score=7873 | https://github.com/Nutlope/hallmark
 - Warnings:
 - warning: none
+
+## 2026-10-31T07:36:25Z
+
+- Candidate count after merge: 299
+- Detailed repo count: 299
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-10-31T073625Z-github-trends.md
+- Snapshot path: data/snapshots/2026-10-31T073625Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=21308 | https://github.com/morluto/rea
+- togg53192-cmd/jailbreaks | score=7363 | https://github.com/togg53192-cmd/jailbreaks
+- pbakaus/impeccable | score=7192 | https://github.com/pbakaus/impeccable
+- Warnings:
+- warning: none
