@@ -786,3 +786,20 @@
 - pbakaus/impeccable | score=7192 | https://github.com/pbakaus/impeccable
 - Warnings:
 - warning: none
+
+## 2026-11-01T08:15:43Z
+
+- Candidate count after merge: 303
+- Detailed repo count: 303
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-01T081543Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-01T081543Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=4891 | https://github.com/morluto/rea
+- pingdotgg/t3code | score=3381 | https://github.com/pingdotgg/t3code
+- thedotmack/claude-mem | score=1833 | https://github.com/thedotmack/claude-mem
+- Warnings:
+- warning: none
