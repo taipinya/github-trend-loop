@@ -2,15 +2,15 @@
 
 ## 本次结论
 
-本期 Top 3 全部是 TypeScript 项目，且都围绕“AI Agent 的工程化外围设施”展开：一个做逆向工程与二进制/应用行为分析，一个做多 Agent 的统一控制面（移动端/Web/桌面），一个做跨会话的长期记忆与上下文注入。三者共同指向一个趋势：Agent 本身的能力竞争正在外溢到“如何控制、如何观测、如何记忆”这一层基础设施。对计算机专业学生来说，这类项目的价值不在于直接上线，而在于它们把 Agent 系统的控制流、上下文管理、工具调用协议（MCP、agent-skills 等）做成了可读的工程实现，非常适合作为课程设计或毕业设计的参考架构。
+本次 Top 3 全部是 TypeScript 项目，且都围绕“agent harness（智能体运行框架/控制面）”这一主题展开：一个面向逆向工程与二进制/应用行为分析，一个面向多智能体订阅的统一远程控制，一个主打“一切皆插件”的通用 agent 运行时。三者的共同信号是：2026 年的开源热点正从“训练模型”转向“如何编排、控制、观测和约束已有智能体”，也就是 agent 的工程化基础设施层。对计算机专业学生来说，这是比“再调一个模型 API”更有课程设计价值的方向——涉及进程管理、插件架构、协议适配、权限沙箱、可观测性等扎实的系统工程问题。
 
-需要说明：本次为 baseline 运行，没有 3 天增量数据，下一次运行才会有 delta 对比；下文引用的 delta_stars 等字段来自输入数据本身，仅作单点参考，不代表趋势加速度。
+需要说明：本次运行是 baseline，没有 3 天增量数据，下一次运行才有 delta。下文引用的 delta_stars / delta_forks / delta_subscribers 来自输入数据字段，仅作趋势参考，不代表本次运行计算出的增量。
 
 ## 报告重点
 
-- 三个项目均为 MIT 或 Apache-2.0 许可，源码可读性强，适合学习而非采购。
-- 共同技术关键词：Agent harness、MCP、agent-skills、上下文压缩、向量/嵌入检索、多端控制面。
-- 关注点应放在“架构分层”和“上下文/记忆的数据流”，而不是安装步骤。
+- 三个项目都提供“控制面 + 适配层”的思路，适合拆解成课程设计：进程/会话管理、插件注册与生命周期、多后端适配器。
+- 关注点应从“功能列表”转向“架构边界”：谁负责调度、谁负责权限、谁负责状态持久化。
+- 三个项目 open_issues 数量差异极大（1731 / 4792 / 0），这本身是判断维护活跃度与成熟度的重要线索。
 
 ## Top 3 项目
 
@@ -18,85 +18,158 @@
 - URL：https://github.com/morluto/rea
 
 #### 项目简介
-rea 属于“AI Agent 驱动的逆向工程与程序分析”领域。从描述“Reverse engineer anything with agents, from app behavior down to native binaries”看，它试图用 Agent 编排的方式，把应用行为分析、二进制分析、多语言代码（Java、C++、Rust、Python、JS/TS、Android、HTML 等）的静态/动态分析串成一条流水线。技术上可能结合了 agent-skills（可复用的 Agent 技能包）、MCP（模型上下文协议）作为工具接入层，以及 CLI 作为统一入口；语言是 TypeScript，说明编排层和工具胶水代码以 Node 生态为主。它完成的任务更像是“把逆向分析中重复性的侦察、定位、交叉引用工作交给 Agent 执行并汇总”。
+
+`rea` 属于“AI 辅助逆向工程 / 安全分析”领域。从描述 “Reverse engineer anything with agents, from app behavior down to native binaries” 看，它试图用智能体把逆向流程拆成可编排的任务：从应用层行为观察，一路下探到原生二进制分析。技术上大概率是 TypeScript 编写的 CLI/编排层，通过 agent-skills、MCP 等机制把不同分析工具（反编译、动态调试、网络抓包、脚本分析）封装成可被智能体调用的能力。它完成的任务不是“自动破解”，而是把逆向工程中重复的侦察、定位、交叉引用、行为归纳等环节交给 agent 流水线。
 
 #### 为什么值得关注
-stars 41 万级、forks 10 万级、subscribers 1591，delta_stars 3236，说明这是一个体量极大且仍在被持续关注的项目；open_issues 1526 也提示社区活跃但问题积压不少。topics 覆盖 agent-skills、mcp、security、android、rust、cpp 等，横跨安全与多语言分析，信息密度高。最近 push 在 2026-11-01，维护节奏看起来是活跃的。README 采用多语言（十余种语言）结构，说明项目有意做国际化推广，文档组织值得作为“开源项目文档工程”的样本研究。
+
+- 体量与热度：stars 428401、forks 106573，delta_stars 11956，是本次三个项目里绝对量最大、增量也最高的，说明“agent + 安全分析”这个交叉方向关注度极高。
+- topic 覆盖面极广：android、cpp、java、rust、linux、security、mcp、agent-skills 等，暗示它不是一个单点工具，而是多语言、多平台的分析框架，README 还提供近 20 种语言版本，社区国际化程度高。
+- 最近 push 在 2026-11-04，维护活跃；但 open_issues 1731 也说明问题积压明显，功能面广带来的复杂度是真实存在的。
+- 从 README 结构看，多语言入口 + docs 目录，说明文档体系较完整，适合作为“如何组织大型 agent 项目文档”的参考样本。
 
 #### README 摘要
-中文说明：README 开头是一个居中的多语言切换导航（English、简体中文、繁体中文、日语、韩语、土耳其语、俄语、越南语、泰语、德语、西班牙语、法语、乌克兰语、波兰语、葡语、阿拉伯语、波斯语、印尼语、意大利语等），正文部分在摘要中被截断，从结构看更像是“项目定位 + 能力介绍 + 使用入口 + 文档索引”的组织方式，具体章节需要进入仓库 docs 目录进一步确认。
-摘要线索：`Reverse engineer anything with agents, from app behavior down to native binaries.`；多语言 README 位于 `docs/readme/README_*.md`。
+
+中文说明：README 开头是一个居中的多语言切换区（English、简体中文、繁體中文、日本語、한국어 等近 20 种语言），指向 `docs/readme/` 下的对应文件，说明项目把“文档国际化”当作一等公民来维护。摘要线索只截取到语言导航部分，正文结构未能完整获取，因此对其功能模块的推断主要来自 description 与 topics，需谨慎看待。
+
+摘要线索：
+- `<div align="center">` 包裹的语言导航，含 `docs/readme/README_zh.md` 等路径。
+- 描述关键词：agents、app behavior、native binaries。
+- topics 中出现 `mcp`、`agent-skills`、`dsh-plugin`，暗示与 MCP 协议及插件化 agent 生态有交集。
 
 #### 具体怎么用
-建议从三个层面理解：第一，看 agent-skills 的组织方式——技能如何被定义、注册、被 Agent 调用，这是理解“Agent 能力可插拔”的关键；第二，看 MCP 相关代码，理解外部工具（反编译、符号分析、动态调试）如何以协议方式暴露给模型；第三，看 CLI 入口如何把多语言分析任务分派下去，形成“侦察—定位—验证”的分析数据流。不要急着跑通全流程，先读编排层和技能注册表，能更快建立心智模型。
+
+建议从“能力抽象”角度切入，而不是照着装：
+- 先看 `docs/readme/` 目录结构，理解它如何把同一份内容组织成多语言版本，这是文档工程的好素材。
+- 关注 agent-skills 与 MCP 相关模块：理解“一个逆向分析能力”如何被描述成 agent 可调用的 skill，这背后是工具描述、参数 schema、结果解析的设计问题。
+- 顺着 topics 里的语言标签（cpp/java/rust/android/linux）去找对应的分析适配层，观察它如何为不同目标类型抽象统一的“分析对象”模型。
+- 把 CLI 入口当作控制面来读：命令如何分发到不同 agent 任务、任务状态如何回传，是理解整个数据流的关键。
 
 #### 适合谁关注
-适合对安全分析、程序分析、Agent 工具链感兴趣的学生和个人开发者；也适合想做“Agent + 领域工具”课程设计的同学，把它当作工具接入与技能编排的参考实现。
+
+- 对系统安全、逆向工程感兴趣，想了解“agent 如何介入安全分析流程”的学生。
+- 做编译原理、程序分析课程设计，想找一个真实的多语言分析框架参考的同学。
+- 研究型工程实践者：关注 agent 工具调用协议（MCP、skills）落地形态的人。
 
 #### 应用场景示例
-- 移动应用安全评估：对 Android 应用做行为路径梳理与可疑调用定位，辅助人工复核。
-- 二进制固件分析：在 IoT/嵌入式固件中定位字符串、协议解析逻辑与潜在风险点。
-- 恶意样本初筛：把重复性的静态侦察交给 Agent，分析人员聚焦判断与验证。
-- 多语言遗留系统梳理：对 Java/C++/Rust 混合代码库做调用关系与依赖的自动化盘点。
+
+- 移动应用安全审计：对 Android 应用做行为路径梳理，辅助定位敏感权限调用与数据外发点。
+- 固件/二进制供应链检查：对第三方原生库做符号与调用关系初筛，缩小人工逆向范围。
+- 漏洞复现辅助：把 CVE 相关的补丁 diff 与二进制行为对照，帮助分析人员快速定位受影响代码路径。
+- 教学实验：在受控靶场里演示“agent 驱动的情报收集—定位—验证”流水线。
 
 #### 风险或局限
-项目体量大、issue 积压多，文档在摘要中信息有限，实际成熟度需要自行阅读源码判断；逆向与安全分析涉及法律与合规边界，使用场景需谨慎；多语言分析工具链依赖较重，工程复杂度高；README 摘要未展示许可证细节之外的治理信息，社区决策机制不明确。
+
+- 安全类工具天然敏感：README 摘要中未见许可证之外的使用约束说明，实际使用需自行确认合规边界，避免用于未授权目标。
+- open_issues 1731，功能面广但问题积压多，生产成熟度存疑；描述中的“anything”是营销式表述，实际覆盖范围需自行验证。
+- 多语言、多平台适配意味着依赖成本高（反编译工具链、模拟器、调试器），环境搭建复杂度可能远超普通项目。
+- 摘要信息不足，无法确认其 agent 编排是本地执行还是依赖外部模型服务，涉及数据外发的风险需自行评估。
 
 ### 2. pingdotgg/t3code
 - URL：https://github.com/pingdotgg/t3code
 
 #### 项目简介
-t3code 定位为“agent harness control surface”，即对本地机器上运行的多个编码 Agent 做统一控制的外壳。它提供 iOS/Android 移动端、Web 应用和 Electron 桌面端三种形态，声称可以对接 Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fx 等订阅制 Agent 工具。技术原理上，它更像是一个“远程控制 + 会话管理 + 多 Agent 适配”的中间层：把不同 Agent 的会话抽象成统一接口，再通过多端前端呈现和控制。语言为 TypeScript，符合其 Web/Electron/移动端跨端的技术选型。
+
+`t3code` 自我定位为 “agent harness control surface”，即“智能体运行框架的控制面”。它属于开发者工具 / 远程开发协作领域，核心任务是用手机 App、Web App 和 Electron 桌面端，远程控制你本机上已经配置好的多种编码智能体（Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fx 等）。技术原理上，它更像一个“多后端适配 + 会话管理 + 远程通道”的中间层：本机侧对接各 agent 的本地运行方式，远端通过移动/网页客户端下发指令并回收输出。它不卖服务，README 明确说 “Nothing”，定位是自用开发体验工具。
 
 #### 为什么值得关注
-stars 3.6 万、forks 8828，delta_stars 3059，热度不低；但 subscribers 仅 89，说明“围观多、深度订阅少”，可能处于早期快速迭代阶段。open_issues 高达 3914，提示功能诉求和缺陷都很多，生产成熟度需要谨慎评估。README 明确写了“Nothing. We built T3 Code because we wanted the best possible development experience with agents.”，这种“自用工具开源”的定位对学习者很友好——代码结构通常围绕真实工作流而非商业抽象。topics 为空，说明项目元数据维护不充分，需要靠 README 和源码补全理解。
+
+- stars 45051、forks 9310，delta_stars 8896，热度高且增长快；subscribers 仅 99，说明是“用的人多、深度订阅者少”的典型工具型项目。
+- 描述字段为空、topics 为空，信息主要靠 README，这本身是个观察点：项目靠产品体验和作者影响力驱动，而非关键词运营。
+- open_issues 4792 非常高，配合 MIT 许可和活跃 push，说明需求旺盛但维护压力大，是研究“开源工具型项目如何应对 issue 洪流”的好样本。
+- 它把“多 agent 订阅统一入口”做成产品，触及一个真实痛点：开发者同时订阅多个编码 agent，切换成本高。
 
 #### README 摘要
-中文说明：README 结构清晰，先给出项目定位（agent harness control surface），再列出支持的平台（iOS、Android、Web、Electron 桌面）和可对接的 Agent 列表，随后用“Wait, what are you selling me?”这种问答式小节澄清项目不卖产品、是自建自用，最后交代灵感来源。整体是“定位—能力—澄清—动机”的叙事结构，适合学习如何写清楚一个工具型项目的边界。
-摘要线索：`It enables control of the agents on your machine with a best-in-class mobile app ... web app and Electron-based desktop app.`；`Works with your subscriptions on Claude Code, Codex, Cursor, Grok Build, OpenCode, Google Antigravity, and fx.`
+
+中文说明：README 结构偏产品说明而非技术文档。开头定义项目是 “agent harness control surface”，随后列出支持的客户端形态（iOS、Android、Web、Electron 桌面），再列出兼容的 agent 订阅清单，并用一个 “Wait, what are you selling me?” 的自问自答段落强调“不卖东西、纯自用”。整体是“是什么—支持什么—为什么做”的叙事结构，技术实现细节在摘要中未体现。
+
+摘要线索：
+- 标题 `# T3 Code`，首段即给出定位与控制面概念。
+- 客户端：iOS App Store、Google Play、`app.t3.codes`、Electron 桌面。
+- 兼容清单：Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity、fx。
+- 明确表述 “Works with your subscriptions”，即复用用户已有订阅，而非自带模型。
 
 #### 具体怎么用
-建议从“适配层”入手：看它如何为每个 Agent 定义统一的会话/命令抽象，这是多 Agent 兼容的核心难点；再看控制面如何把本地 Agent 的状态同步到移动端/Web，涉及本地服务、鉴权与消息通道的设计；最后看 Electron 与移动端如何复用同一套前端逻辑。理解这三层，就能自己设计一个“多工具统一控制台”的课程项目。
+
+从“控制面架构”角度拆解：
+- 先分清三层：远端客户端（移动/Web/桌面）、本机 agent 适配层、以及两者之间的通信通道。理解这三层的边界，比看 UI 更有价值。
+- 关注“适配器”设计：每个 agent（Claude Code、Codex 等）的启动方式、输入输出格式都不同，项目如何把它们统一成一套会话模型，是核心工程问题。
+- 看会话与状态管理：远程控制意味着要处理断线重连、任务进行中状态同步、多设备并发，这些是分布式系统的经典问题。
+- 把 README 的“支持清单”当作适配层能力矩阵来读，思考新增一个 agent 需要改哪些地方。
 
 #### 适合谁关注
-适合对开发者工具、跨端应用、Agent 工作流感兴趣的学生和个人开发者；也适合想做“本地服务 + 多端控制”架构实验的同学。
+
+- 想做一个“个人开发环境远程控制台”的学生，可作为毕业设计或课程项目的架构参考。
+- 对多端同步、会话管理、Electron/移动端跨平台感兴趣的开发者。
+- 研究型工程实践者：关注“如何在不侵入第三方 agent 的前提下做统一编排”。
 
 #### 应用场景示例
-- 个人研发工作台：在手机上查看和干预本机正在运行的编码 Agent 任务。
-- 团队内部 Agent 网关：统一管理成员机器上不同 Agent 工具的会话与权限。
-- 教学演示环境：教师端集中观察学生机器上 Agent 的执行过程与中间产物。
-- 多 Agent 对比实验：在同一控制面下切换不同 Agent，比较同一任务的执行差异。
+
+- 个人远程开发：在通勤路上用手机查看本机正在跑的编码 agent 进度并追加指令。
+- 多 agent 对比实验：同一任务分发给不同订阅的 agent，统一入口收集结果做横向比较。
+- 团队内部工具原型：为小组搭建一个共享的 agent 控制面板，统一查看任务队列与输出。
+- 教学演示：展示“控制面 + 多适配器”架构如何降低多工具切换成本。
 
 #### 风险或局限
-open_issues 数量很大，功能稳定性与兼容性可能波动；依赖多个第三方 Agent 的订阅与本地环境，适配成本高且易受上游变更影响；项目自述为“自用工具”，生产级治理、权限模型与安全审计信息在摘要中未体现；移动端与桌面端分发涉及应用商店审核，长期维护存在不确定性。
 
-### 3. thedotmack/claude-mem
-- URL：https://github.com/thedotmack/claude-mem
+- 远程控制本机 agent 涉及安全边界：认证、通道加密、权限范围在摘要中未体现，实际部署需重点评估。
+- open_issues 4792 且 forks 高，可能存在大量重复问题与社区分叉，主线维护节奏需观察。
+- 依赖多个第三方 agent 的本地行为，任一上游变更都可能导致适配失效，属于“上游脆弱性”高的项目。
+- 移动端依赖应用商店分发，企业/校园网络环境下可用性受限；README 未提供自托管方案细节。
+
+### 3. deepseek-ai/deepseek-harness
+- URL：https://github.com/deepseek-ai/deepseek-harness
 
 #### 项目简介
-claude-mem 属于“AI Agent 长期记忆与上下文管理”领域。它的核心思路是：捕获 Agent 在一次会话中做的所有事情，用 AI 做压缩，再把相关上下文注入到未来会话中，从而实现跨会话的持久上下文。技术上从 topics 看涉及 embeddings、RAG、向量库（chromadb）、SQLite、mem0、openmemory、supermemory 等多种记忆方案关键词，说明它可能在“结构化存储 + 向量检索 + 压缩摘要”之间做组合。它面向 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多个 Agent，属于跨 Agent 的记忆中间件。
+
+`deepseek-harness`（简称 `dsh`）是 DeepSeek AI 开源的 agent harness，属于“智能体运行时 / 编排框架”领域。其核心设计是 “everything-is-a-plugin”，构建在 Cordis 之上——Cordis 是一个强调“时空可组合性（spatiotemporal composability）”的编程范式，README 引用了对应论文。技术上可理解为：把 agent 的各类能力（工具、模型接入、记忆、权限、UI）都抽象为插件，通过统一的插件容器管理生命周期与依赖，从而实现高度可组合的 agent 系统。它完成的任务是提供一个可扩展的 agent 运行底座，而非某个具体应用。
 
 #### 为什么值得关注
-stars 10.8 万、forks 9498、subscribers 339，delta_stars 1517，体量和关注度都很高；open_issues 仅 158，相对前两个项目治理更收敛。topics 极其丰富（ai-memory、long-term-memory、memory-engine、rag、embeddings、sqlite、chromadb 等），几乎是一张“Agent 记忆技术栈地图”，非常适合作为学习记忆系统设计的索引。README 带有 Vercel OSS Program、Greptile、SerpApi 等徽章，说明项目在开源生态中有一定曝光。Apache-2.0 许可对商用和学习都较友好。
+
+- stars 271705、forks 33076，体量巨大；delta_stars 3944，增长稳健但相对基数不算爆发。
+- open_issues 为 0，与另两个项目形成鲜明对比：可能是 issue 管理策略不同（如关闭 issue 转向讨论区），也可能是项目较新、社区尚未形成问题流，需谨慎解读，不能直接等同于“质量高”。
+- topics 为 ai-agents、cordis、dsh、dsh-plugin，指向明确的插件生态意图；README 明确标注 “Developer preview” 并警告会有破坏性变更，成熟度信号清晰。
+- 有配套文档站点与 SAFETY.md 安全声明，说明作者对“agent 运行安全”有意识，这在 agent 框架里是值得研究的点。
 
 #### README 摘要
-中文说明：README 以居中 logo 开篇，配多个生态徽章（Vercel OSS Program、Greptile、SerpApi 等），正文应围绕“为什么需要持久记忆—如何捕获—如何压缩—如何注入”展开，并列出支持的 Agent 列表。摘要被截断，具体章节需进仓库确认，但从 description 已能看出完整的产品叙事。
-摘要线索：`Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.`；`Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More`。
+
+中文说明：README 结构清晰，先给中英文切换，再给一句话定位，接着点明“一切皆插件”架构与底层 Cordis 及论文出处，然后给出文档站点链接。随后是 “Developer preview” 段落，用大写强调会有兼容性破坏变更，并引导阅读 SAFETY.md。整体是“定位—架构—文档—成熟度警告—安全提示”的标准开源框架 README 结构。
+
+摘要线索：
+- `DeepSeek Harness (dsh) is an open-source agent harness`。
+- `everything-is-a-plugin` 架构，基于 Cordis。
+- 论文：`A Programming Paradigm for Spatiotemporal Composability`（arXiv:2608.25512）。
+- 文档：`deepseek-harness.github.io/deepseek-harness/`。
+- 明确 `Developer preview` 与 `THERE WILL BE COMPATIBILITY-BREAKING CHANGES`。
 
 #### 具体怎么用
-建议按“捕获—压缩—存储—检索—注入”五段数据流来读代码：捕获层看它如何挂钩 Agent 会话事件；压缩层看摘要策略与触发时机；存储层看 SQLite 与向量库的分工（结构化元数据 vs 语义检索）；检索层看相关性排序与上下文预算控制；注入层看如何把记忆拼进下一次会话的 prompt。这条链路本身就是一份很好的“Agent 记忆系统”设计教材。
+
+从“插件架构”这一核心命题入手：
+- 先读 Cordis 的论文与仓库，理解“时空可组合性”到底解决什么问题——这决定了 dsh 的插件模型为何这样设计。
+- 在 dsh 文档站里找“插件生命周期”与“依赖注入”相关章节，观察一个插件从注册、初始化到销毁的完整路径。
+- 把 agent 的能力拆成插件来看：模型接入、工具调用、上下文管理分别对应哪些插件类型，理解扩展点在哪。
+- 关注 SAFETY.md：agent 框架的安全模型（权限、沙箱、工具白名单）是理解其工程成熟度的关键，也是课程设计的好题目。
 
 #### 适合谁关注
-适合对 RAG、向量检索、Agent 上下文工程感兴趣的学生和研究型工程实践者；也适合想做“个人知识库 + Agent 记忆”课程设计的同学。
+
+- 想深入理解“插件化架构 + 依赖注入 + 生命周期管理”的软件工程方向学生。
+- 做 agent 框架、IDE 插件系统、可组合中间件相关课程设计或毕设的同学。
+- 研究型工程实践者：关注 agent 运行时的可组合性与安全边界设计。
 
 #### 应用场景示例
-- 研发知识沉淀：把多次调试会话中的结论压缩成可检索记忆，供后续排障复用。
-- 客服质检辅助：跨会话保留历史工单上下文，减少重复询问与信息丢失。
-- 企业知识库增强：将 Agent 会话产物结构化后接入内部检索，形成可追溯的记忆层。
-- 长期项目助手：在跨周跨月的项目中维持对需求变更与决策历史的连续理解。
+
+- 企业内部 agent 平台底座：把不同团队的模型接入、内部工具、审批流各自做成插件，统一在一个 harness 上运行。
+- 研发平台智能助手：将代码检索、CI 查询、工单系统封装为插件，供 agent 按需组合调用。
+- 教学实验平台：让学生实现一个自定义插件（如“本地文件检索”），观察其在生命周期中的注册与调用过程。
+- 安全研究：基于 SAFETY.md 的模型，设计插件权限隔离实验，验证恶意插件的影响范围。
 
 #### 风险或局限
-“捕获一切会话内容”涉及隐私与数据合规，企业场景需评估数据落盘与脱敏策略；压缩质量直接影响记忆可靠性，摘要失真可能引入错误上下文；多 Agent 兼容意味着适配面广、维护成本高；向量库与嵌入模型带来额外依赖与算力成本；README 摘要未展示性能与规模上限，生产成熟度需自行验证。
+
+- 明确处于 developer preview，会有破坏性变更，不适合作为需要长期稳定的生产底座。
+- open_issues 为 0 需要谨慎解读：可能是 issue 策略特殊，不能据此判断项目无缺陷。
+- 依赖 Cordis 这一相对小众的编程范式，学习曲线陡峭，团队协作时需额外培训成本。
+- 插件化架构带来灵活性的同时也增加调试复杂度：问题定位可能横跨多个插件，对可观测性工具要求高。
+- 摘要未涉及许可证之外的商业使用限制，但“DeepSeek AI 官方项目”意味着其路线图受公司策略影响，社区主导权有限。
 
 ## 数据限制说明
 

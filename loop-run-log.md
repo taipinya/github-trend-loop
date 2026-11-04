@@ -803,3 +803,20 @@
 - thedotmack/claude-mem | score=1833 | https://github.com/thedotmack/claude-mem
 - Warnings:
 - warning: none
+
+## 2026-11-04T08:10:42Z
+
+- Candidate count after merge: 304
+- Detailed repo count: 304
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-04T081042Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-04T081042Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=17087 | https://github.com/morluto/rea
+- pingdotgg/t3code | score=9945 | https://github.com/pingdotgg/t3code
+- deepseek-ai/deepseek-harness | score=5253 | https://github.com/deepseek-ai/deepseek-harness
+- Warnings:
+- warning: none

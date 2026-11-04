@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-11-01T08:15:43Z
+- Last run: 2026-11-04T08:10:42Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-11-01T081543Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-11-01T081543Z.json
-- Candidate count after merge: 303
-- Detailed repo count: 303
+- Latest archived report path: reports/2026-11-04T081042Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-11-04T081042Z.json
+- Candidate count after merge: 304
+- Detailed repo count: 304
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=4891
-  - pingdotgg/t3code (https://github.com/pingdotgg/t3code) score=3381
-  - thedotmack/claude-mem (https://github.com/thedotmack/claude-mem) score=1833
+  - morluto/rea (https://github.com/morluto/rea) score=17087
+  - pingdotgg/t3code (https://github.com/pingdotgg/t3code) score=9945
+  - deepseek-ai/deepseek-harness (https://github.com/deepseek-ai/deepseek-harness) score=5253
 - Warnings:
   - none
 - Next run notes:
