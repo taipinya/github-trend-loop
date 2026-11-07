@@ -820,3 +820,20 @@
 - deepseek-ai/deepseek-harness | score=5253 | https://github.com/deepseek-ai/deepseek-harness
 - Warnings:
 - warning: none
+
+## 2026-11-07T07:52:42Z
+
+- Candidate count after merge: 314
+- Detailed repo count: 314
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-07T075242Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-07T075242Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=15010 | https://github.com/morluto/rea
+- storytold/craft-anything | score=13698 | https://github.com/storytold/craft-anything
+- cloudflare/security-audit-skill | score=6920 | https://github.com/cloudflare/security-audit-skill
+- Warnings:
+- warning: none
