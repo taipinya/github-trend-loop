@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-11-07T07:52:42Z
+- Last run: 2026-11-10T08:52:50Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-11-07T075242Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-11-07T075242Z.json
-- Candidate count after merge: 314
-- Detailed repo count: 314
+- Latest archived report path: reports/2026-11-10T085250Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-11-10T085250Z.json
+- Candidate count after merge: 304
+- Detailed repo count: 304
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=15010
-  - storytold/craft-anything (https://github.com/storytold/craft-anything) score=13698
-  - cloudflare/security-audit-skill (https://github.com/cloudflare/security-audit-skill) score=6920
+  - morluto/rea (https://github.com/morluto/rea) score=12948
+  - storytold/craft-anything (https://github.com/storytold/craft-anything) score=9725
+  - pingdotgg/t3code (https://github.com/pingdotgg/t3code) score=5468
 - Warnings:
   - none
 - Next run notes:

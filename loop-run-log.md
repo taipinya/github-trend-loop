@@ -837,3 +837,20 @@
 - cloudflare/security-audit-skill | score=6920 | https://github.com/cloudflare/security-audit-skill
 - Warnings:
 - warning: none
+
+## 2026-11-10T08:52:50Z
+
+- Candidate count after merge: 304
+- Detailed repo count: 304
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-10T085250Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-10T085250Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=12948 | https://github.com/morluto/rea
+- storytold/craft-anything | score=9725 | https://github.com/storytold/craft-anything
+- pingdotgg/t3code | score=5468 | https://github.com/pingdotgg/t3code
+- Warnings:
+- warning: none
