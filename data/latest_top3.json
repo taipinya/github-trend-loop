@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-11-10T08:52:50Z",
+  "run_at": "2026-11-13T08:49:52Z",
   "baseline": false,
   "repos": [
     {
@@ -30,30 +30,30 @@
         "touhou",
         "typescript"
       ],
-      "stars": 448130,
-      "forks": 110470,
-      "subscribers": 1701,
-      "open_issues": 1725,
+      "stars": 456166,
+      "forks": 112010,
+      "subscribers": 1727,
+      "open_issues": 1800,
       "created_at": "2026-04-14T00:51:32Z",
-      "updated_at": "2026-11-10T08:53:00Z",
-      "pushed_at": "2026-11-10T06:59:29Z",
+      "updated_at": "2026-11-13T08:50:21Z",
+      "pushed_at": "2026-11-13T08:35:59Z",
       "archived": false,
       "disabled": false,
       "fork": false,
       "license": "MIT",
       "sources": [
-        "search:pushed:>2026-10-27 stars:>200",
-        "search:topic:mcp stars:>50 pushed:>2026-10-11"
+        "search:pushed:>2026-10-30 stars:>200",
+        "search:topic:mcp stars:>50 pushed:>2026-10-14"
       ],
       "readme_summary": "<div align=\"center\"> **English** · [简体中文](docs/readme/README_zh.md) · [繁體中文](docs/readme/README_zh-TW.md) · [日本語](docs/readme/README_ja.md) · [한국어](docs/readme/README_ko.md) · [Türkçe](docs/readme/README_tr.md) · [Русский](docs/readme/README_ru.md) · [Tiếng Việt](docs/readme/README_vi.md) · [ไทย](docs/readme/README_th.md) · [Deutsch](docs/readme/README_de.md) · [Español](docs/readme/README_es.md) · [Français](docs/readme/README_fr.md) · [Українська](docs/readme/README_uk.md) · [Polski](docs/readme/README_pl.md) · [Português (Brasil)](docs/readme/README_pt-BR.md) · [العربية](docs/readme/README_ar.md) · [فارسی](docs/readme/README_fa.md) · [Bahasa Indonesia](docs/readme/README_id.md) · [Italia…",
       "readme_length": 12000,
-      "delta_stars": 9264,
-      "delta_subscribers": 34,
-      "delta_forks": 1737,
+      "delta_stars": 8036,
+      "delta_subscribers": 26,
+      "delta_forks": 1540,
       "score_parts": {
-        "delta_stars": 9264,
-        "delta_subscribers_weighted": 170,
-        "delta_forks_weighted": 3474,
+        "delta_stars": 8036,
+        "delta_subscribers_weighted": 130,
+        "delta_forks_weighted": 3080,
         "recent_push_bonus": 20,
         "readme_bonus": 15,
         "topic_bonus": 5,
@@ -61,7 +61,7 @@
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 12948
+      "trend_score": 11286
     },
     {
       "full_name": "storytold/craft-anything",
@@ -70,29 +70,29 @@
       "homepage": "",
       "language": "Rust",
       "topics": [],
-      "stars": 25243,
-      "forks": 5116,
-      "subscribers": 123,
-      "open_issues": 294,
+      "stars": 30596,
+      "forks": 6245,
+      "subscribers": 135,
+      "open_issues": 360,
       "created_at": "2026-10-31T14:50:00Z",
-      "updated_at": "2026-11-10T08:53:01Z",
-      "pushed_at": "2026-11-10T08:04:06Z",
+      "updated_at": "2026-11-13T08:50:07Z",
+      "pushed_at": "2026-11-12T19:50:17Z",
       "archived": false,
       "disabled": false,
       "fork": false,
       "license": "Apache-2.0",
       "sources": [
-        "search:created:>2026-10-11 stars:>50"
+        "search:created:>2026-10-14 stars:>50"
       ],
       "readme_summary": "<p align=\"center\"> <a href=\"https://getartcraft.com/\"> <picture> <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/artcraft-logo-white.svg\"> <img alt=\"ArtCraft\" src=\"docs/brand/artcraft-logo.svg\" width=\"200\"> </picture> </a> </p> <p align=\"center\"> <img src=\"assets/app-icon/hicolor/256x256/apps/ai.storyteller.craft-anything.png\" width=\"128\" height=\"128\" alt=\"Craft Anything icon: an engraved raven on a blue tile\"> </p> <h1 align=\"center\">Craft Anything</h1> <p align=\"center\"> <b>English</b> · <a href=\"README.ja.md\">日本語</a> · <a href=\"README.zh.md\">简体中文</a> · <a href=\"README.zh-hant.md\">繁體中文</a> · <a href=\"README.ko.md\">한국어</a> · <a href=\"README.es.md\">Español</a> · <a href=\"REA…",
       "readme_length": 12000,
-      "delta_stars": 6368,
-      "delta_subscribers": 32,
-      "delta_forks": 1581,
+      "delta_stars": 5353,
+      "delta_subscribers": 12,
+      "delta_forks": 1129,
       "score_parts": {
-        "delta_stars": 6368,
-        "delta_subscribers_weighted": 160,
-        "delta_forks_weighted": 3162,
+        "delta_stars": 5353,
+        "delta_subscribers_weighted": 60,
+        "delta_forks_weighted": 2258,
         "recent_push_bonus": 20,
         "readme_bonus": 15,
         "topic_bonus": 0,
@@ -100,46 +100,53 @@
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 9725
+      "trend_score": 7706
     },
     {
-      "full_name": "pingdotgg/t3code",
-      "html_url": "https://github.com/pingdotgg/t3code",
-      "description": "",
-      "homepage": "https://t3.codes",
-      "language": "TypeScript",
-      "topics": [],
-      "stars": 54721,
-      "forks": 10240,
-      "subscribers": 107,
-      "open_issues": 5830,
-      "created_at": "2026-02-08T23:46:22Z",
-      "updated_at": "2026-11-10T08:52:51Z",
-      "pushed_at": "2026-11-10T08:52:44Z",
+      "full_name": "Minireel/HGhub",
+      "html_url": "https://github.com/Minireel/HGhub",
+      "description": "YellowFruit third-party client",
+      "homepage": "",
+      "language": "",
+      "topics": [
+        "android",
+        "drama",
+        "free",
+        "movie-web-app",
+        "reels",
+        "windows"
+      ],
+      "stars": 8746,
+      "forks": 5733,
+      "subscribers": 37,
+      "open_issues": 19,
+      "created_at": "2026-11-03T14:04:27Z",
+      "updated_at": "2026-11-13T08:47:56Z",
+      "pushed_at": "2026-11-10T13:42:26Z",
       "archived": false,
       "disabled": false,
       "fork": false,
-      "license": "MIT",
+      "license": "",
       "sources": [
-        "trending:weekly"
+        "search:created:>2026-10-14 stars:>50"
       ],
-      "readme_summary": "# T3 Code T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app ([iOS](https://apps.apple.com/us/app/t3-code-remote-claude-more/id6787819824), [Android](https://play.google.com/store/apps/details?id=com.t3tools.t3code)), [web app](https://app.t3.codes) and [Electron-based desktop app](https://t3.codes). Works with your subscriptions on Claude Code, Codex, Cursor, Grok Build, OpenCode, Google Antigravity, and fx. If they're set up on your computer, T3 Code can control them. ## \"Wait, what are you selling me?\" Nothing. We built T3 Code because we wanted the best possible development experience with agents. We were inspi…",
-      "readme_length": 5294,
-      "delta_stars": 4521,
-      "delta_subscribers": 0,
-      "delta_forks": 456,
+      "readme_summary": "# HGhub 感谢每一位为 HGhub 贡献代码、提交建议与反馈的朋友，也感谢所有关注、使用和支持过这个项目的人。你们的帮助与善意，我一直记在心里。 经过慎重考虑，我决定出于个人原因停止维护，并撤下本仓库中的代码、版本发布与构建记录，仅留下这份说明。 对于这次决定给大家带来的不便，以及让期待项目继续发展的朋友感到失望，我真诚地说一声抱歉。也向曾投入时间与精力的贡献者们致歉，感谢你们曾经一起完善这个项目。 **也向大家报个平安：我一切平安，没有被任何上游或机构处理。这次调整完全出于个人原因，请大家放心，也不必作其他猜测。** 感谢这段时间的陪伴与理解。祝大家生活顺利，一切安好。",
+      "readme_length": 298,
+      "delta_stars": 1457,
+      "delta_subscribers": 18,
+      "delta_forks": 2998,
       "score_parts": {
-        "delta_stars": 4521,
-        "delta_subscribers_weighted": 0,
-        "delta_forks_weighted": 912,
+        "delta_stars": 1457,
+        "delta_subscribers_weighted": 90,
+        "delta_forks_weighted": 5996,
         "recent_push_bonus": 20,
-        "readme_bonus": 15,
+        "readme_bonus": 0,
         "topic_bonus": 0,
         "awesome_penalty": 0,
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 5468
+      "trend_score": 7563
     }
   ]
 }

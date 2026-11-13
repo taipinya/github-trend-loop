@@ -854,3 +854,20 @@
 - pingdotgg/t3code | score=5468 | https://github.com/pingdotgg/t3code
 - Warnings:
 - warning: none
+
+## 2026-11-13T08:49:52Z
+
+- Candidate count after merge: 307
+- Detailed repo count: 306
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-13T084952Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-13T084952Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=11286 | https://github.com/morluto/rea
+- storytold/craft-anything | score=7706 | https://github.com/storytold/craft-anything
+- Minireel/HGhub | score=7563 | https://github.com/Minireel/HGhub
+- Warnings:
+- warning: none
