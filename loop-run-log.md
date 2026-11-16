@@ -871,3 +871,20 @@
 - Minireel/HGhub | score=7563 | https://github.com/Minireel/HGhub
 - Warnings:
 - warning: none
+
+## 2026-11-16T08:40:23Z
+
+- Candidate count after merge: 303
+- Detailed repo count: 302
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-16T084023Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-16T084023Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=9211 | https://github.com/morluto/rea
+- Ebony-Vinyl/dsh-our-free-model | score=5041 | https://github.com/Ebony-Vinyl/dsh-our-free-model
+- storytold/craft-anything | score=4995 | https://github.com/storytold/craft-anything
+- Warnings:
+- warning: none

@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-11-13T08:49:52Z",
+  "run_at": "2026-11-16T08:40:23Z",
   "baseline": false,
   "repos": [
     {
@@ -30,30 +30,30 @@
         "touhou",
         "typescript"
       ],
-      "stars": 456166,
-      "forks": 112010,
-      "subscribers": 1727,
-      "open_issues": 1800,
+      "stars": 462721,
+      "forks": 113293,
+      "subscribers": 1737,
+      "open_issues": 1508,
       "created_at": "2026-04-14T00:51:32Z",
-      "updated_at": "2026-11-13T08:50:21Z",
-      "pushed_at": "2026-11-13T08:35:59Z",
+      "updated_at": "2026-11-16T08:41:03Z",
+      "pushed_at": "2026-11-16T08:34:03Z",
       "archived": false,
       "disabled": false,
       "fork": false,
       "license": "MIT",
       "sources": [
-        "search:pushed:>2026-10-30 stars:>200",
-        "search:topic:mcp stars:>50 pushed:>2026-10-14"
+        "search:pushed:>2026-11-02 stars:>200",
+        "search:topic:mcp stars:>50 pushed:>2026-10-17"
       ],
       "readme_summary": "<div align=\"center\"> **English** · [简体中文](docs/readme/README_zh.md) · [繁體中文](docs/readme/README_zh-TW.md) · [日本語](docs/readme/README_ja.md) · [한국어](docs/readme/README_ko.md) · [Türkçe](docs/readme/README_tr.md) · [Русский](docs/readme/README_ru.md) · [Tiếng Việt](docs/readme/README_vi.md) · [ไทย](docs/readme/README_th.md) · [Deutsch](docs/readme/README_de.md) · [Español](docs/readme/README_es.md) · [Français](docs/readme/README_fr.md) · [Українська](docs/readme/README_uk.md) · [Polski](docs/readme/README_pl.md) · [Português (Brasil)](docs/readme/README_pt-BR.md) · [العربية](docs/readme/README_ar.md) · [فارسی](docs/readme/README_fa.md) · [Bahasa Indonesia](docs/readme/README_id.md) · [Italia…",
       "readme_length": 12000,
-      "delta_stars": 8036,
-      "delta_subscribers": 26,
-      "delta_forks": 1540,
+      "delta_stars": 6555,
+      "delta_subscribers": 10,
+      "delta_forks": 1283,
       "score_parts": {
-        "delta_stars": 8036,
-        "delta_subscribers_weighted": 130,
-        "delta_forks_weighted": 3080,
+        "delta_stars": 6555,
+        "delta_subscribers_weighted": 50,
+        "delta_forks_weighted": 2566,
         "recent_push_bonus": 20,
         "readme_bonus": 15,
         "topic_bonus": 5,
@@ -61,7 +61,58 @@
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 11286
+      "trend_score": 9211
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "html_url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm",
+        "model-provider",
+        "openai-compatible"
+      ],
+      "stars": 76538,
+      "forks": 2154,
+      "subscribers": 71,
+      "open_issues": 191,
+      "created_at": "2026-09-24T16:17:19Z",
+      "updated_at": "2026-11-16T08:41:40Z",
+      "pushed_at": "2026-11-16T03:20:57Z",
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "license": "MIT",
+      "sources": [
+        "search:topic:llm stars:>50 pushed:>2026-10-17",
+        "search:topic:developer-tools stars:>50 pushed:>2026-10-17"
+      ],
+      "readme_summary": "<div align=\"center\"> <img src=\"icon.svg\" alt=\"Our Free Model — DeepSeek Harness 免费模型插件\" width=\"120\"> # dsh-our-free-model **简体中文** | [English](README_EN.md) <img alt=\"许可证\" src=\"https://img.shields.io/badge/license-MIT-263146?style=flat-square\"> <img alt=\"零依赖\" src=\"https://img.shields.io/badge/dependencies-zero-4b6fff?style=flat-square\"> <img alt=\"无构建步骤\" src=\"https://img.shields.io/badge/build%20step-none-7da1de?style=flat-square\"> <img alt=\"适配内核\" src=\"https://img.shields.io/badge/dsh-0.1.5--0.1.7--rc.2-2f6f4f?style=flat-square\"> <img alt=\"状态\" src=\"https://img.shields.io/badge/status-beta-f0a441?style=flat-square\"> <br> <a href=\"https://trendshift.io/repositories/261203\"><img alt=\"GITHUB TRE…",
+      "readme_length": 12000,
+      "delta_stars": 4584,
+      "delta_subscribers": 8,
+      "delta_forks": 186,
+      "score_parts": {
+        "delta_stars": 4584,
+        "delta_subscribers_weighted": 40,
+        "delta_forks_weighted": 372,
+        "recent_push_bonus": 20,
+        "readme_bonus": 15,
+        "topic_bonus": 10,
+        "awesome_penalty": 0,
+        "stale_penalty": 0,
+        "baseline_star_hint": 0
+      },
+      "trend_score": 5041
     },
     {
       "full_name": "storytold/craft-anything",
@@ -70,29 +121,29 @@
       "homepage": "",
       "language": "Rust",
       "topics": [],
-      "stars": 30596,
-      "forks": 6245,
-      "subscribers": 135,
-      "open_issues": 360,
+      "stars": 34200,
+      "forks": 6908,
+      "subscribers": 141,
+      "open_issues": 374,
       "created_at": "2026-10-31T14:50:00Z",
-      "updated_at": "2026-11-13T08:50:07Z",
-      "pushed_at": "2026-11-12T19:50:17Z",
+      "updated_at": "2026-11-16T08:40:21Z",
+      "pushed_at": "2026-11-16T07:59:21Z",
       "archived": false,
       "disabled": false,
       "fork": false,
       "license": "Apache-2.0",
       "sources": [
-        "search:created:>2026-10-14 stars:>50"
+        "search:created:>2026-10-17 stars:>50"
       ],
       "readme_summary": "<p align=\"center\"> <a href=\"https://getartcraft.com/\"> <picture> <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/artcraft-logo-white.svg\"> <img alt=\"ArtCraft\" src=\"docs/brand/artcraft-logo.svg\" width=\"200\"> </picture> </a> </p> <p align=\"center\"> <img src=\"assets/app-icon/hicolor/256x256/apps/ai.storyteller.craft-anything.png\" width=\"128\" height=\"128\" alt=\"Craft Anything icon: an engraved raven on a blue tile\"> </p> <h1 align=\"center\">Craft Anything</h1> <p align=\"center\"> <b>English</b> · <a href=\"README.ja.md\">日本語</a> · <a href=\"README.zh.md\">简体中文</a> · <a href=\"README.zh-hant.md\">繁體中文</a> · <a href=\"README.ko.md\">한국어</a> · <a href=\"README.es.md\">Español</a> · <a href=\"REA…",
       "readme_length": 12000,
-      "delta_stars": 5353,
-      "delta_subscribers": 12,
-      "delta_forks": 1129,
+      "delta_stars": 3604,
+      "delta_subscribers": 6,
+      "delta_forks": 663,
       "score_parts": {
-        "delta_stars": 5353,
-        "delta_subscribers_weighted": 60,
-        "delta_forks_weighted": 2258,
+        "delta_stars": 3604,
+        "delta_subscribers_weighted": 30,
+        "delta_forks_weighted": 1326,
         "recent_push_bonus": 20,
         "readme_bonus": 15,
         "topic_bonus": 0,
@@ -100,53 +151,7 @@
         "stale_penalty": 0,
         "baseline_star_hint": 0
       },
-      "trend_score": 7706
-    },
-    {
-      "full_name": "Minireel/HGhub",
-      "html_url": "https://github.com/Minireel/HGhub",
-      "description": "YellowFruit third-party client",
-      "homepage": "",
-      "language": "",
-      "topics": [
-        "android",
-        "drama",
-        "free",
-        "movie-web-app",
-        "reels",
-        "windows"
-      ],
-      "stars": 8746,
-      "forks": 5733,
-      "subscribers": 37,
-      "open_issues": 19,
-      "created_at": "2026-11-03T14:04:27Z",
-      "updated_at": "2026-11-13T08:47:56Z",
-      "pushed_at": "2026-11-10T13:42:26Z",
-      "archived": false,
-      "disabled": false,
-      "fork": false,
-      "license": "",
-      "sources": [
-        "search:created:>2026-10-14 stars:>50"
-      ],
-      "readme_summary": "# HGhub 感谢每一位为 HGhub 贡献代码、提交建议与反馈的朋友，也感谢所有关注、使用和支持过这个项目的人。你们的帮助与善意，我一直记在心里。 经过慎重考虑，我决定出于个人原因停止维护，并撤下本仓库中的代码、版本发布与构建记录，仅留下这份说明。 对于这次决定给大家带来的不便，以及让期待项目继续发展的朋友感到失望，我真诚地说一声抱歉。也向曾投入时间与精力的贡献者们致歉，感谢你们曾经一起完善这个项目。 **也向大家报个平安：我一切平安，没有被任何上游或机构处理。这次调整完全出于个人原因，请大家放心，也不必作其他猜测。** 感谢这段时间的陪伴与理解。祝大家生活顺利，一切安好。",
-      "readme_length": 298,
-      "delta_stars": 1457,
-      "delta_subscribers": 18,
-      "delta_forks": 2998,
-      "score_parts": {
-        "delta_stars": 1457,
-        "delta_subscribers_weighted": 90,
-        "delta_forks_weighted": 5996,
-        "recent_push_bonus": 20,
-        "readme_bonus": 0,
-        "topic_bonus": 0,
-        "awesome_penalty": 0,
-        "stale_penalty": 0,
-        "baseline_star_hint": 0
-      },
-      "trend_score": 7563
+      "trend_score": 4995
     }
   ]
 }
