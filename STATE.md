@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-11-16T08:40:23Z
+- Last run: 2026-11-19T09:33:36Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-11-16T084023Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-11-16T084023Z.json
-- Candidate count after merge: 303
-- Detailed repo count: 302
+- Latest archived report path: reports/2026-11-19T093336Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-11-19T093336Z.json
+- Candidate count after merge: 312
+- Detailed repo count: 311
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=9211
-  - Ebony-Vinyl/dsh-our-free-model (https://github.com/Ebony-Vinyl/dsh-our-free-model) score=5041
-  - storytold/craft-anything (https://github.com/storytold/craft-anything) score=4995
+  - morluto/rea (https://github.com/morluto/rea) score=9058
+  - dream-num/univer (https://github.com/dream-num/univer) score=5252
+  - storytold/craft-anything (https://github.com/storytold/craft-anything) score=4898
 - Warnings:
   - none
 - Next run notes:

@@ -888,3 +888,20 @@
 - storytold/craft-anything | score=4995 | https://github.com/storytold/craft-anything
 - Warnings:
 - warning: none
+
+## 2026-11-19T09:33:36Z
+
+- Candidate count after merge: 312
+- Detailed repo count: 311
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-19T093336Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-19T093336Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=9058 | https://github.com/morluto/rea
+- dream-num/univer | score=5252 | https://github.com/dream-num/univer
+- storytold/craft-anything | score=4898 | https://github.com/storytold/craft-anything
+- Warnings:
+- warning: none
