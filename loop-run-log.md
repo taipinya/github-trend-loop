@@ -905,3 +905,20 @@
 - storytold/craft-anything | score=4898 | https://github.com/storytold/craft-anything
 - Warnings:
 - warning: none
+
+## 2026-11-22T08:55:49Z
+
+- Candidate count after merge: 309
+- Detailed repo count: 308
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-22T085549Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-22T085549Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- morluto/rea | score=6052 | https://github.com/morluto/rea
+- storytold/craft-anything | score=4171 | https://github.com/storytold/craft-anything
+- firecrawl/firecrawl | score=3342 | https://github.com/firecrawl/firecrawl
+- Warnings:
+- warning: none
