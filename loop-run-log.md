@@ -922,3 +922,20 @@
 - firecrawl/firecrawl | score=3342 | https://github.com/firecrawl/firecrawl
 - Warnings:
 - warning: none
+
+## 2026-11-25T10:34:28Z
+
+- Candidate count after merge: 307
+- Detailed repo count: 306
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-25T103428Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-25T103428Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- elementalsouls/Claude-BugHunter | score=6470 | https://github.com/elementalsouls/Claude-BugHunter
+- morluto/rea | score=6221 | https://github.com/morluto/rea
+- HKUDS/CLI-Anything | score=3571 | https://github.com/HKUDS/CLI-Anything
+- Warnings:
+- warning: none

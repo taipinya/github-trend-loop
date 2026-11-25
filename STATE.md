@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-11-22T08:55:49Z
+- Last run: 2026-11-25T10:34:28Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-11-22T085549Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-11-22T085549Z.json
-- Candidate count after merge: 309
-- Detailed repo count: 308
+- Latest archived report path: reports/2026-11-25T103428Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-11-25T103428Z.json
+- Candidate count after merge: 307
+- Detailed repo count: 306
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - morluto/rea (https://github.com/morluto/rea) score=6052
-  - storytold/craft-anything (https://github.com/storytold/craft-anything) score=4171
-  - firecrawl/firecrawl (https://github.com/firecrawl/firecrawl) score=3342
+  - elementalsouls/Claude-BugHunter (https://github.com/elementalsouls/Claude-BugHunter) score=6470
+  - morluto/rea (https://github.com/morluto/rea) score=6221
+  - HKUDS/CLI-Anything (https://github.com/HKUDS/CLI-Anything) score=3571
 - Warnings:
   - none
 - Next run notes:
