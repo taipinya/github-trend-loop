@@ -939,3 +939,20 @@
 - HKUDS/CLI-Anything | score=3571 | https://github.com/HKUDS/CLI-Anything
 - Warnings:
 - warning: none
+
+## 2026-11-28T09:30:38Z
+
+- Candidate count after merge: 310
+- Detailed repo count: 309
+- Baseline: False
+- Latest report path: reports/latest.md
+- Archived report path: reports/2026-11-28T093038Z-github-trends.md
+- Snapshot path: data/snapshots/2026-11-28T093038Z.json
+- Report verification result: passed
+- LLM provider: deepseek
+- Top 3:
+- elementalsouls/Claude-BugHunter | score=5376 | https://github.com/elementalsouls/Claude-BugHunter
+- morluto/rea | score=5209 | https://github.com/morluto/rea
+- Marvisak/VIctory | score=3360 | https://github.com/Marvisak/VIctory
+- Warnings:
+- warning: none

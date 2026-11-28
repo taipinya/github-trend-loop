@@ -1,12 +1,12 @@
 # STATE
 
-- Last run: 2026-11-25T10:34:28Z
+- Last run: 2026-11-28T09:30:38Z
 - Baseline status: delta mode active
 - Latest report path: reports/latest.md
-- Latest archived report path: reports/2026-11-25T103428Z-github-trends.md
-- Latest snapshot path: data/snapshots/2026-11-25T103428Z.json
-- Candidate count after merge: 307
-- Detailed repo count: 306
+- Latest archived report path: reports/2026-11-28T093038Z-github-trends.md
+- Latest snapshot path: data/snapshots/2026-11-28T093038Z.json
+- Candidate count after merge: 310
+- Detailed repo count: 309
 - LLM provider: deepseek
 - Current limitations:
   - Trending HTML parsing may fail if GitHub changes page markup.
@@ -15,9 +15,9 @@
   - README summaries and model-written explanations should be checked manually.
   - DeepSeek failures retry once, then use a locally generated report that must pass the same verifier.
 - Latest Top 3:
-  - elementalsouls/Claude-BugHunter (https://github.com/elementalsouls/Claude-BugHunter) score=6470
-  - morluto/rea (https://github.com/morluto/rea) score=6221
-  - HKUDS/CLI-Anything (https://github.com/HKUDS/CLI-Anything) score=3571
+  - elementalsouls/Claude-BugHunter (https://github.com/elementalsouls/Claude-BugHunter) score=5376
+  - morluto/rea (https://github.com/morluto/rea) score=5209
+  - Marvisak/VIctory (https://github.com/Marvisak/VIctory) score=3360
 - Warnings:
   - none
 - Next run notes:
